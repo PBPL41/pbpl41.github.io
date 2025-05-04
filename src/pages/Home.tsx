@@ -1,14 +1,11 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home as HomeIcon, FileText, Radio, MapPin, Building, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import CallToAction from '@/components/ui/CallToAction';
 import FeatureCard from '@/components/ui/FeatureCard';
-
 const Home = () => {
-  return (
-    <main>
+  return <main>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-bfa-blue to-bfa-blue-dark text-white">
         <div className="container-wide py-16 md:py-24 min-h-[60vh] flex flex-col justify-center">
@@ -39,32 +36,14 @@ const Home = () => {
         <div className="container-wide">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Building a Better Housing Future</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our proposal creates a path to more affordable, accessible housing in communities across America through smart zoning reform.
-            </p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Our proposal creates a path to more affordable housing in communities across America through smart zoning reform.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <FeatureCard 
-              icon={<Building size={36} />}
-              title="More Housing"
-              description="Enable diverse housing types to meet growing demand in high-opportunity areas."
-            />
-            <FeatureCard 
-              icon={<Users size={36} />}
-              title="Inclusive Communities"
-              description="Create affordable options for essential workers, families, and seniors in their communities."
-            />
-            <FeatureCard 
-              icon={<MapPin size={36} />}
-              title="Local Control"
-              description="Maintain local authority while incentivizing modern zoning best practices."
-            />
-            <FeatureCard 
-              icon={<HomeIcon size={36} />}
-              title="Strong Neighborhoods"
-              description="Revitalize communities with mixed-use development and sustainable growth."
-            />
+            <FeatureCard icon={<Building size={36} />} title="More Housing" description="Enable diverse housing types to meet growing demand in high-opportunity areas." />
+            <FeatureCard icon={<Users size={36} />} title="Inclusive Communities" description="Create affordable options for essential workers, families, and seniors in their communities." />
+            <FeatureCard icon={<MapPin size={36} />} title="Local Control" description="Maintain local authority while incentivizing modern zoning best practices." />
+            <FeatureCard icon={<HomeIcon size={36} />} title="Strong Neighborhoods" description="Revitalize communities with mixed-use development and sustainable growth." />
           </div>
         </div>
       </section>
@@ -146,14 +125,7 @@ const Home = () => {
       </section>
 
       {/* Final CTA */}
-      <CallToAction 
-        title="Join the Build for America Coalition"
-        subtitle="Together, we can create vibrant communities with housing options for all"
-        buttonText="Support the Campaign"
-        buttonLink="/coalition"
-      />
-    </main>
-  );
+      <CallToAction title="Join the Build for America Coalition" subtitle="Together, we can create vibrant communities with housing options for all" buttonText="Support the Campaign" buttonLink="/coalition" />
+    </main>;
 };
-
 export default Home;
