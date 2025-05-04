@@ -105,7 +105,7 @@ const Home = () => {
               
               <div className="space-y-6">
                 <div className="border-b pb-4">
-                  <p className="text-4xl font-bold text-bfa-red">3.8M</p>
+                  <p className="text-4xl font-bold text-bfa-red">3.7M</p>
                   <p className="text-gray-600">Unit housing shortage nationwide</p>
                 </div>
                 <div className="border-b pb-4">
