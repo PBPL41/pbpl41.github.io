@@ -1,14 +1,11 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Download, FileText, Building, Home, Clock, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ResourceCard from '@/components/ui/ResourceCard';
 import CallToAction from '@/components/ui/CallToAction';
-
 const AboutPolicy = () => {
-  return (
-    <main>
+  return <main>
       {/* Hero Section */}
       <section className="bg-bfa-blue text-white py-16">
         <div className="container-wide">
@@ -29,9 +26,7 @@ const AboutPolicy = () => {
             <div className="lg:col-span-2 space-y-8">
               <div>
                 <h2 className="text-3xl font-bold mb-4 text-bfa-blue-dark">Policy Overview</h2>
-                <p className="text-lg mb-4">
-                  Build for America establishes a $10 billion competitive grant program administered by the U.S. Department of Housing and Urban Development (HUD) to reward localities that reform outdated zoning policies to enable more housing development.
-                </p>
+                <p className="text-lg mb-4">Build for America establishes a competitive grant program administered by the U.S. Department of Housing and Urban Development (HUD) to reward localities that reform outdated zoning policies to enable more housing development.</p>
                 <p className="mb-4">
                   The program provides funding directly to local governments that successfully implement zoning reforms aligned with increasing housing supply, creating more affordable options, and building inclusive communities.
                 </p>
@@ -120,10 +115,7 @@ const AboutPolicy = () => {
               <div className="bg-bfa-gray-light p-6 rounded-lg sticky top-24">
                 <h3 className="text-xl font-bold mb-4 text-bfa-blue-dark">Resources</h3>
                 <div className="space-y-4">
-                  <a 
-                    href="#" 
-                    className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow"
-                  >
+                  <a href="#" className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow">
                     <FileText className="text-bfa-blue mr-3" size={24} />
                     <div>
                       <p className="font-bold">Dear Colleague Letter</p>
@@ -132,10 +124,7 @@ const AboutPolicy = () => {
                     <Download className="ml-auto text-gray-500" size={18} />
                   </a>
                   
-                  <a 
-                    href="#" 
-                    className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow"
-                  >
+                  <a href="#" className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow">
                     <FileText className="text-bfa-blue mr-3" size={24} />
                     <div>
                       <p className="font-bold">One-Page Summary</p>
@@ -144,10 +133,7 @@ const AboutPolicy = () => {
                     <Download className="ml-auto text-gray-500" size={18} />
                   </a>
                   
-                  <a 
-                    href="#" 
-                    className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow"
-                  >
+                  <a href="#" className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow">
                     <FileText className="text-bfa-blue mr-3" size={24} />
                     <div>
                       <p className="font-bold">FAQ for Planners</p>
@@ -156,10 +142,7 @@ const AboutPolicy = () => {
                     <Download className="ml-auto text-gray-500" size={18} />
                   </a>
                   
-                  <a 
-                    href="#" 
-                    className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow"
-                  >
+                  <a href="#" className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow">
                     <FileText className="text-bfa-blue mr-3" size={24} />
                     <div>
                       <p className="font-bold">Full Policy Memo</p>
@@ -181,15 +164,7 @@ const AboutPolicy = () => {
       </section>
 
       {/* Final CTA */}
-      <CallToAction 
-        title="See the Impact in Your Community"
-        subtitle="Explore our interactive maps to visualize how zoning reform can transform housing options"
-        buttonText="View Interactive Maps"
-        buttonLink="/maps"
-        variant="secondary"
-      />
-    </main>
-  );
+      <CallToAction title="See the Impact in Your Community" subtitle="Explore our interactive maps to visualize how zoning reform can transform housing options" buttonText="View Interactive Maps" buttonLink="/maps" variant="secondary" />
+    </main>;
 };
-
 export default AboutPolicy;
