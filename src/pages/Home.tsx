@@ -113,8 +113,8 @@ const Home = () => {
                   <p className="text-gray-600">Of renters are cost-burdened</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-bfa-red">90%</p>
-                  <p className="text-gray-600">Of cities face housing affordability challenges</p>
+                  <p className="text-4xl font-bold text-bfa-red">76%</p>
+                  <p className="text-gray-600">Of Americans believe housing affordability is a growing problem</p>
                 </div>
               </div>
             </div>
