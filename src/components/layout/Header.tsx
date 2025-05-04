@@ -25,7 +25,6 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-8">
-          <Link to="/" className="text-foreground hover:text-bfa-blue font-medium transition-colors">Home</Link>
           <Link to="/about-policy" className="text-foreground hover:text-bfa-blue font-medium transition-colors">About the Policy</Link>
           <Link to="/why-it-matters" className="text-foreground hover:text-bfa-blue font-medium transition-colors">Why It Matters</Link>
           <Link to="/maps" className="text-foreground hover:text-bfa-blue font-medium transition-colors">Interactive Maps</Link>
@@ -48,7 +47,6 @@ const Header = () => {
       {isMenuOpen && (
         <div className="lg:hidden bg-white absolute w-full shadow-lg animate-fade-in">
           <nav className="container-wide flex flex-col py-4 space-y-4">
-            <Link to="/" className="text-foreground hover:text-bfa-blue font-medium transition-colors" onClick={toggleMenu}>Home</Link>
             <Link to="/about-policy" className="text-foreground hover:text-bfa-blue font-medium transition-colors" onClick={toggleMenu}>About the Policy</Link>
             <Link to="/why-it-matters" className="text-foreground hover:text-bfa-blue font-medium transition-colors" onClick={toggleMenu}>Why It Matters</Link>
             <Link to="/maps" className="text-foreground hover:text-bfa-blue font-medium transition-colors" onClick={toggleMenu}>Interactive Maps</Link>
