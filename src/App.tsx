@@ -10,6 +10,9 @@ import AboutPolicy from "./pages/AboutPolicy";
 import WhyItMatters from "./pages/WhyItMatters";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import Maps from "./pages/Maps";
+import Coalition from "./pages/Coalition";
+import Media from "./pages/Media";
 
 const queryClient = new QueryClient();
 
@@ -26,10 +29,9 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/about-policy" element={<AboutPolicy />} />
               <Route path="/why-it-matters" element={<WhyItMatters />} />
-              {/* These routes will be implemented in future iterations */}
-              <Route path="/maps" element={<NotFound />} />
-              <Route path="/coalition" element={<NotFound />} />
-              <Route path="/media" element={<NotFound />} />
+              <Route path="/maps" element={<Maps />} />
+              <Route path="/coalition" element={<Coalition />} />
+              <Route path="/media" element={<Media />} />
               <Route path="/events" element={<NotFound />} />
               <Route path="/contact" element={<NotFound />} />
               <Route path="*" element={<NotFound />} />
