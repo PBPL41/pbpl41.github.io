@@ -109,7 +109,7 @@ const Home = () => {
                   <p className="text-gray-600">Unit housing shortage nationwide</p>
                 </div>
                 <div className="border-b pb-4">
-                  <p className="text-4xl font-bold text-bfa-red">49%</p>
+                  <p className="text-4xl font-bold text-bfa-red">50%</p>
                   <p className="text-gray-600">Of renters are cost-burdened</p>
                 </div>
                 <div>
