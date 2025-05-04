@@ -1,13 +1,10 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import TestimonialCard from '@/components/ui/TestimonialCard';
 import CallToAction from '@/components/ui/CallToAction';
-
 const WhyItMatters = () => {
-  return (
-    <main>
+  return <main>
       {/* Hero Section */}
       <section className="bg-bfa-earth text-white py-16">
         <div className="container-wide">
@@ -27,11 +24,7 @@ const WhyItMatters = () => {
           <div className="mb-16">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="bg-bfa-gray-light rounded-lg overflow-hidden h-80">
-                <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
-                  alt="Teacher working from home" 
-                  className="w-full h-full object-cover"
-                />
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Teacher working from home" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h2 className="text-3xl font-bold mb-4 text-bfa-blue-dark">Meet Sarah</h2>
@@ -74,7 +67,7 @@ const WhyItMatters = () => {
               </div>
               
               <div className="bg-white p-6 border border-gray-200 rounded-lg shadow-sm text-center">
-                <p className="text-4xl font-bold text-bfa-red mb-2">11M+</p>
+                <p className="text-4xl font-bold text-bfa-red mb-2">12M+</p>
                 <p className="text-gray-600">Households spending 50%+ on housing</p>
               </div>
             </div>
@@ -108,7 +101,9 @@ const WhyItMatters = () => {
                   
                   <div className="mb-4">
                     <div className="h-2 bg-gray-200 rounded-full mb-2">
-                      <div className="h-2 bg-bfa-blue rounded-full" style={{ width: '30%' }}></div>
+                      <div className="h-2 bg-bfa-blue rounded-full" style={{
+                      width: '30%'
+                    }}></div>
                     </div>
                     <div className="flex justify-between text-sm text-gray-500">
                       <span>8:23</span>
@@ -135,26 +130,11 @@ const WhyItMatters = () => {
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <TestimonialCard 
-                quote="We've seen firsthand how zoning reform can revitalize neighborhoods while maintaining their character. It's not about destroying communities, but enhancing them with more options for everyone."
-                name="Michael Chen"
-                title="Urban Planning Director"
-                organization="City of Portland"
-              />
+              <TestimonialCard quote="We've seen firsthand how zoning reform can revitalize neighborhoods while maintaining their character. It's not about destroying communities, but enhancing them with more options for everyone." name="Michael Chen" title="Urban Planning Director" organization="City of Portland" />
               
-              <TestimonialCard 
-                quote="As a developer, the biggest obstacle we face is outdated zoning. With simple reforms, we could build 30% more housing at lower price points without any government subsidies."
-                name="Alisha Washington"
-                title="CEO"
-                organization="Innovative Housing Solutions"
-              />
+              <TestimonialCard quote="As a developer, the biggest obstacle we face is outdated zoning. With simple reforms, we could build 30% more housing at lower price points without any government subsidies." name="Alisha Washington" title="CEO" organization="Innovative Housing Solutions" />
               
-              <TestimonialCard 
-                quote="Our firefighters, teachers, and healthcare workers shouldn't have to commute two hours to serve our community. Zoning reform means they can live where they work."
-                name="Robert Hernandez"
-                title="Mayor"
-                organization="City of Lakewood"
-              />
+              <TestimonialCard quote="Our firefighters, teachers, and healthcare workers shouldn't have to commute two hours to serve our community. Zoning reform means they can live where they work." name="Robert Hernandez" title="Mayor" organization="City of Lakewood" />
             </div>
           </div>
 
@@ -169,7 +149,9 @@ const WhyItMatters = () => {
                   Studies show that targeted zoning reforms can increase housing production by 10-25% in high-demand areas within 5 years.
                 </p>
                 <div className="h-4 bg-gray-100 rounded-full">
-                  <div className="h-4 bg-bfa-blue rounded-full" style={{ width: '75%' }}></div>
+                  <div className="h-4 bg-bfa-blue rounded-full" style={{
+                  width: '75%'
+                }}></div>
                 </div>
               </div>
               
@@ -179,7 +161,9 @@ const WhyItMatters = () => {
                   When implemented effectively, zoning reforms can slow or stabilize housing cost growth by 5-15% compared to similar markets.
                 </p>
                 <div className="h-4 bg-gray-100 rounded-full">
-                  <div className="h-4 bg-bfa-blue rounded-full" style={{ width: '60%' }}></div>
+                  <div className="h-4 bg-bfa-blue rounded-full" style={{
+                  width: '60%'
+                }}></div>
                 </div>
               </div>
               
@@ -189,7 +173,9 @@ const WhyItMatters = () => {
                   Communities with diverse housing options see increased economic activity, with studies showing 1.5-2x the retail spending in mixed-use areas.
                 </p>
                 <div className="h-4 bg-gray-100 rounded-full">
-                  <div className="h-4 bg-bfa-blue rounded-full" style={{ width: '85%' }}></div>
+                  <div className="h-4 bg-bfa-blue rounded-full" style={{
+                  width: '85%'
+                }}></div>
                 </div>
               </div>
             </div>
@@ -198,14 +184,7 @@ const WhyItMatters = () => {
       </section>
 
       {/* Final CTA */}
-      <CallToAction 
-        title="Join the Movement for Housing Opportunity"
-        subtitle="Add your voice to the growing coalition supporting zoning reform"
-        buttonText="Join the Coalition"
-        buttonLink="/coalition"
-      />
-    </main>
-  );
+      <CallToAction title="Join the Movement for Housing Opportunity" subtitle="Add your voice to the growing coalition supporting zoning reform" buttonText="Join the Coalition" buttonLink="/coalition" />
+    </main>;
 };
-
 export default WhyItMatters;
