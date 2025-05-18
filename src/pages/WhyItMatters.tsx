@@ -79,11 +79,8 @@ const WhyItMatters = () => {
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="md:w-1/3">
-                  <div className="bg-bfa-blue aspect-square rounded-lg flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M18 8a6 6 0 0 0-6-6 6 6 0 0 0-6 6c0 7-3 9-3 9h18s-3-2-3-9"></path>
-                      <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-                    </svg>
+                  <div className="bg-bfa-blue aspect-square flex items-center justify-center rounded-lg">
+                    
                   </div>
                 </div>
                 
@@ -94,14 +91,10 @@ const WhyItMatters = () => {
                   </p>
                   
                   <div className="mb-4">
-                    <div className="h-2 bg-gray-200 rounded-full mb-2">
-                      <div className="h-2 bg-bfa-blue rounded-full" style={{
-                      width: '30%'
-                    }}></div>
-                    </div>
+                    
                     <div className="flex justify-between text-sm text-gray-500">
-                      <span>8:23</span>
-                      <span>28:45</span>
+                      
+                      
                     </div>
                   </div>
                   
@@ -117,7 +110,7 @@ const WhyItMatters = () => {
           {/* Testimonials */}
           <div className="mb-16">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold mb-4">Voices from the Community</h2>
+              <h2 className="text-3xl font-bold mb-4">Voices from Your Communities</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 Hear directly from those affected by and working to solve the housing crisis
               </p>
