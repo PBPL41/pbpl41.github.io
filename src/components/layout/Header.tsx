@@ -1,13 +1,18 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  return <header className="bg-white shadow-sm sticky top-0 z-50">
+
+  return (
+    <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container-wide flex justify-between items-center py-4">
         <div className="flex items-center">
           <Link to="/" className="flex items-center space-x-2">
@@ -24,7 +29,7 @@ const Header = () => {
           <Link to="/why-it-matters" className="text-foreground hover:text-bfa-blue font-medium transition-colors">Why It Matters</Link>
           <Link to="/maps" className="text-foreground hover:text-bfa-blue font-medium transition-colors">Interactive Maps</Link>
           <Link to="/coalition" className="text-foreground hover:text-bfa-blue font-medium transition-colors">Join the Coalition</Link>
-          
+          <Link to="/media" className="text-foreground hover:text-bfa-blue font-medium transition-colors">Campaign Media</Link>
         </nav>
 
         {/* CTA Button - Desktop */}
@@ -39,7 +44,8 @@ const Header = () => {
       </div>
 
       {/* Mobile Navigation */}
-      {isMenuOpen && <div className="lg:hidden bg-white absolute w-full shadow-lg animate-fade-in">
+      {isMenuOpen && (
+        <div className="lg:hidden bg-white absolute w-full shadow-lg animate-fade-in">
           <nav className="container-wide flex flex-col py-4 space-y-4">
             <Link to="/about-policy" className="text-foreground hover:text-bfa-blue font-medium transition-colors" onClick={toggleMenu}>About the Policy</Link>
             <Link to="/why-it-matters" className="text-foreground hover:text-bfa-blue font-medium transition-colors" onClick={toggleMenu}>Why It Matters</Link>
@@ -48,7 +54,10 @@ const Header = () => {
             <Link to="/media" className="text-foreground hover:text-bfa-blue font-medium transition-colors" onClick={toggleMenu}>Campaign Media</Link>
             <Button className="bg-bfa-blue hover:bg-bfa-blue-dark text-white w-full mt-4">Support Now</Button>
           </nav>
-        </div>}
-    </header>;
+        </div>
+      )}
+    </header>
+  );
 };
+
 export default Header;
