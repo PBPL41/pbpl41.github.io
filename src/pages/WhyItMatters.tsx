@@ -27,16 +27,10 @@ const WhyItMatters = () => {
                 <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Teacher working from home" className="w-full h-full object-cover" />
               </div>
               <div>
-                <h2 className="text-3xl font-bold mb-4 text-bfa-blue-dark">Meet Sarah</h2>
-                <p className="text-lg mb-4">
-                  Sarah is a third-grade teacher who has worked at Lincoln Elementary School for seven years. Despite her essential role educating the community's children, she can't afford to live in the district where she teaches.
-                </p>
-                <p className="mb-4">
-                  Her 45-minute commute each way adds stress and reduces the time she can spend preparing for class or participating in after-school activities. When offered a position closer to her apartment, she had to make the difficult choice to leave the school she loves.
-                </p>
-                <p className="font-medium">
-                  Sarah's story is not unique. Across America, essential workers are being priced out of the communities they serve due to a lack of affordable housing options.
-                </p>
+                <h2 className="text-3xl font-bold mb-4 text-bfa-blue-dark">The Housing Crisis Is Undeniable</h2>
+                <p className="text-lg mb-4">America's housing shortage is reshaping communities, pushing essential workers, young families, and seniors further from opportunity, stability, and belonging. This crisis isn't abstract — it's on every block where teachers, nurses, and service workers are commuting longer, paying more, and living with less.</p>
+                
+                
               </div>
             </div>
           </div>
