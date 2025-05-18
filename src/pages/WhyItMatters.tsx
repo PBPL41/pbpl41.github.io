@@ -111,9 +111,7 @@ const WhyItMatters = () => {
           <div className="mb-16">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4">Voices from Your Communities</h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Hear directly from those affected by and working to solve the housing crisis
-              </p>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">What does your mayor have to say about zoning reform?</p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
