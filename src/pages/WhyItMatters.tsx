@@ -24,7 +24,7 @@ const WhyItMatters = () => {
           <div className="mb-16">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="bg-bfa-gray-light rounded-lg overflow-hidden h-80">
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Teacher working from home" className="w-full h-full object-cover" />
+                <img alt="Teacher working from home" className="w-full h-full object-cover" src="/lovable-uploads/867536c5-50cf-4c0f-8fdf-7e1f645524b4.png" />
               </div>
               <div>
                 <h2 className="text-3xl font-bold mb-4 text-bfa-blue-dark">The Housing Crisis Is Undeniable</h2>
