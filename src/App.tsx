@@ -1,4 +1,5 @@
 
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -26,6 +27,15 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/about-policy" element={<AboutPolicy />} />
               <Route path="/why-it-matters" element={<WhyItMatters />} />
+              
+              {/* City pages routes */}
+              <Route path="/cities/boston" element={<NotFound />} />
+              <Route path="/cities/los-angeles" element={<NotFound />} />
+              <Route path="/cities/new-york" element={<NotFound />} />
+              <Route path="/cities/portland" element={<NotFound />} />
+              <Route path="/cities/san-francisco" element={<NotFound />} />
+              <Route path="/cities/seattle" element={<NotFound />} />
+              
               {/* These routes will be implemented in future iterations */}
               <Route path="/maps" element={<NotFound />} />
               <Route path="/coalition" element={<NotFound />} />
