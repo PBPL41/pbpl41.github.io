@@ -1,16 +1,21 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Linkedin, Mail } from 'lucide-react';
+
 const Footer = () => {
   const year = new Date().getFullYear();
+  
   return <footer className="bg-bfa-blue-dark text-white">
       <div className="container-wide py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 rounded bg-white flex items-center justify-center">
-                <span className="text-bfa-blue-dark font-heading font-bold text-xl">B</span>
-              </div>
+              <img 
+                src="/lovable-uploads/8d635ce6-d8ff-49b6-b9db-4e616cd26640.png" 
+                alt="Build for America Logo" 
+                className="h-10 w-auto bg-white p-1 rounded"
+              />
               <span className="font-heading font-bold text-lg">Build for America</span>
             </Link>
             <p className="text-sm text-gray-300 mt-4">Advocating for zoning reform to create more affordable housing and stronger communities across America.</p>
@@ -84,4 +89,5 @@ const Footer = () => {
       </div>
     </footer>;
 };
+
 export default Footer;

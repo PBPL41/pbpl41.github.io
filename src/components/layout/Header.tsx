@@ -1,19 +1,25 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  
   return <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container-wide flex justify-between items-center py-4">
         <div className="flex items-center">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded bg-bfa-blue flex items-center justify-center">
-              <span className="text-white font-heading font-bold text-xl">B</span>
-            </div>
+            <img 
+              src="/lovable-uploads/8d635ce6-d8ff-49b6-b9db-4e616cd26640.png" 
+              alt="Build for America Logo" 
+              className="h-10 w-auto"
+            />
             <span className="font-heading font-bold text-xl hidden sm:inline">Build for America</span>
           </Link>
         </div>
@@ -51,4 +57,5 @@ const Header = () => {
         </div>}
     </header>;
 };
+
 export default Header;
