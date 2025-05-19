@@ -130,9 +130,7 @@ const WhyItMatters = () => {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                 <h3 className="text-xl font-bold mb-4 text-bfa-blue">Housing Supply</h3>
-                <p className="mb-4">
-                  Studies show that targeted zoning reforms can increase housing production by 10-25% in high-demand areas within 5 years.
-                </p>
+                <p className="mb-4">Zoning reforms can increase housing units by 9-13% after 10 years.</p>
                 
               </div>
               
