@@ -133,11 +133,7 @@ const WhyItMatters = () => {
                 <p className="mb-4">
                   Studies show that targeted zoning reforms can increase housing production by 10-25% in high-demand areas within 5 years.
                 </p>
-                <div className="h-4 bg-gray-100 rounded-full">
-                  <div className="h-4 bg-bfa-blue rounded-full" style={{
-                  width: '75%'
-                }}></div>
-                </div>
+                
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
@@ -145,11 +141,7 @@ const WhyItMatters = () => {
                 <p className="mb-4">
                   When implemented effectively, zoning reforms can slow or stabilize housing cost growth by 5-15% compared to similar markets.
                 </p>
-                <div className="h-4 bg-gray-100 rounded-full">
-                  <div className="h-4 bg-bfa-blue rounded-full" style={{
-                  width: '60%'
-                }}></div>
-                </div>
+                
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
@@ -157,11 +149,7 @@ const WhyItMatters = () => {
                 <p className="mb-4">
                   Communities with diverse housing options see increased economic activity, with studies showing 1.5-2x the retail spending in mixed-use areas.
                 </p>
-                <div className="h-4 bg-gray-100 rounded-full">
-                  <div className="h-4 bg-bfa-blue rounded-full" style={{
-                  width: '85%'
-                }}></div>
-                </div>
+                
               </div>
             </div>
           </div>
