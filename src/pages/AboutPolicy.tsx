@@ -4,6 +4,7 @@ import { Download, FileText, Building, Home, Clock, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ResourceCard from '@/components/ui/ResourceCard';
 import CallToAction from '@/components/ui/CallToAction';
+
 const AboutPolicy = () => {
   return <main>
       {/* Hero Section */}
@@ -164,7 +165,13 @@ const AboutPolicy = () => {
       </section>
 
       {/* Final CTA */}
-      <CallToAction title="See the Impact in Your Community" subtitle="Explore our interactive maps to visualize how zoning reform can transform housing options" buttonText="View Interactive Maps" buttonLink="/maps" variant="secondary" />
+      <CallToAction 
+        title="Join the Movement for Housing Opportunity" 
+        subtitle="Add your voice to the growing coalition supporting zoning reform" 
+        buttonText="Join the Coalition" 
+        buttonLink="/coalition" 
+      />
     </main>;
 };
+
 export default AboutPolicy;
