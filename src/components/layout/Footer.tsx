@@ -45,7 +45,7 @@ const Footer = () => {
                 <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Policy Brief</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">FAQ for Local Government</a>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">FAQ for Local Governments</a>
               </li>
             </ul>
           </div>
