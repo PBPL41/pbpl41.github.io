@@ -102,13 +102,12 @@ const WhyItMatters = () => {
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="md:w-1/3">
-                  {/* Replaced placeholder with actual podcast cover image */}
-                  <div className="rounded-lg aspect-square overflow-hidden">
-                    <img 
-                      src="/lovable-uploads/663b9ed5-5ba9-41c2-934a-92977c8a4d1a.png" 
-                      alt="Podcast host" 
-                      className="w-full h-full object-cover object-center"
-                    />
+                  {/* Image Upload Area - Changed from blue div to an image placeholder */}
+                  <div className="bg-bfa-gray rounded-lg aspect-square flex items-center justify-center border-2 border-dashed border-gray-300">
+                    <div className="text-center p-4">
+                      <p className="text-sm text-gray-500">Upload podcast cover image</p>
+                      <p className="text-xs text-gray-400 mt-1">(Square image recommended)</p>
+                    </div>
                   </div>
                 </div>
                 
