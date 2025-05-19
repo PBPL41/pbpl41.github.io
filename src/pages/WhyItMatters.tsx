@@ -1,11 +1,9 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import TestimonialCard from '@/components/ui/TestimonialCard';
 import CallToAction from '@/components/ui/CallToAction';
 import { Card } from '@/components/ui/card';
-
 const WhyItMatters = () => {
   return <main>
       {/* Hero Section */}
@@ -118,7 +116,7 @@ const WhyItMatters = () => {
           <div className="mb-16">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4">Voices from Your Communities</h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">What does your mayor have to say about zoning reform?</p>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">What does your city government have to say about zoning reform?</p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
