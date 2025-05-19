@@ -1,18 +1,38 @@
 
 import React, { ReactNode } from 'react';
+import { cn } from '@/lib/utils';
 
 interface FeatureCardProps {
-  icon: ReactNode;
+  icon?: ReactNode;
   title: string;
-  description: string;
+  description?: string;
+  children?: ReactNode;
+  className?: string;
+  contentClassName?: string;
+  fullWidth?: boolean;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
+const FeatureCard: React.FC<FeatureCardProps> = ({ 
+  icon, 
+  title, 
+  description, 
+  children,
+  className,
+  contentClassName,
+  fullWidth = false
+}) => {
   return (
-    <div className="bg-white p-6 md:p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-      <div className="mb-4 text-bfa-blue">{icon}</div>
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+    <div className={cn(
+      "bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-100",
+      fullWidth ? "col-span-full md:col-span-2 lg:col-span-1" : "",
+      className
+    )}>
+      {icon && <div className="mb-4 text-bfa-blue">{icon}</div>}
+      <h3 className="text-xl font-bold mb-2 text-bfa-blue p-4 pb-2">{title}</h3>
+      <div className={cn("px-4 pb-4", contentClassName)}>
+        {description && <p className="text-gray-600 mb-4">{description}</p>}
+        {children}
+      </div>
     </div>
   );
 };
