@@ -39,13 +39,13 @@ const Footer = () => {
                 <Link to="/media" className="text-gray-300 hover:text-white transition-colors text-sm">Podcast</Link>
               </li>
               <li>
-                <Link to="/events" className="text-gray-300 hover:text-white transition-colors text-sm">Events</Link>
+                <Link to="/events" className="text-gray-300 hover:text-white transition-colors text-sm">Dear Colleague Letter</Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Policy Brief (PDF)</a>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Policy Brief</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">FAQ for Planners</a>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">FAQ for Local Government</a>
               </li>
             </ul>
           </div>

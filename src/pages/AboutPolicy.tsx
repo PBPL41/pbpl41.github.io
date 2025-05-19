@@ -127,8 +127,8 @@ const AboutPolicy = () => {
                   <a href="#" className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow">
                     <FileText className="text-bfa-blue mr-3" size={24} />
                     <div>
-                      <p className="font-bold">One-Page Summary</p>
-                      <p className="text-sm text-gray-600">Policy brief for stakeholders</p>
+                      <p className="font-bold">Policy Brief</p>
+                      <p className="text-sm text-gray-600">One-page summary for stakeholders</p>
                     </div>
                     <Download className="ml-auto text-gray-500" size={18} />
                   </a>
@@ -136,7 +136,7 @@ const AboutPolicy = () => {
                   <a href="#" className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow">
                     <FileText className="text-bfa-blue mr-3" size={24} />
                     <div>
-                      <p className="font-bold">FAQ for Planners</p>
+                      <p className="font-bold">FAQ for Cities</p>
                       <p className="text-sm text-gray-600">Common questions answered</p>
                     </div>
                     <Download className="ml-auto text-gray-500" size={18} />
