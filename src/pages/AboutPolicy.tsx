@@ -4,7 +4,6 @@ import { Download, FileText, Building, Home, Clock, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ResourceCard from '@/components/ui/ResourceCard';
 import CallToAction from '@/components/ui/CallToAction';
-
 const AboutPolicy = () => {
   return <main>
       {/* Hero Section */}
@@ -143,14 +142,7 @@ const AboutPolicy = () => {
                     <Download className="ml-auto text-gray-500" size={18} />
                   </a>
                   
-                  <a href="#" className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow">
-                    <FileText className="text-bfa-blue mr-3" size={24} />
-                    <div>
-                      <p className="font-bold">Full Policy Memo</p>
-                      <p className="text-sm text-gray-600">Complete proposal details</p>
-                    </div>
-                    <Download className="ml-auto text-gray-500" size={18} />
-                  </a>
+                  
                 </div>
 
                 <div className="mt-8">
@@ -165,13 +157,7 @@ const AboutPolicy = () => {
       </section>
 
       {/* Final CTA */}
-      <CallToAction 
-        title="Join the Movement for Housing Opportunity" 
-        subtitle="Add your voice to the growing coalition supporting zoning reform" 
-        buttonText="Join the Coalition" 
-        buttonLink="/coalition" 
-      />
+      <CallToAction title="Join the Movement for Housing Opportunity" subtitle="Add your voice to the growing coalition supporting zoning reform" buttonText="Join the Coalition" buttonLink="/coalition" />
     </main>;
 };
-
 export default AboutPolicy;
