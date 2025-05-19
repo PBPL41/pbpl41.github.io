@@ -51,18 +51,18 @@ const WhyItMatters = () => {
               </div>
               
               <div className="bg-white p-6 border border-gray-200 rounded-lg shadow-sm text-center">
-                <p className="text-4xl font-bold text-bfa-red mb-2">49%</p>
+                <p className="text-4xl font-bold text-bfa-red mb-2">50%</p>
                 <p className="text-gray-600">Of renters are cost-burdened</p>
               </div>
               
               <div className="bg-white p-6 border border-gray-200 rounded-lg shadow-sm text-center">
-                <p className="text-4xl font-bold text-bfa-red mb-2">79%</p>
-                <p className="text-gray-600">Of metro areas with rising housing costs</p>
+                <p className="text-4xl font-bold text-bfa-red mb-2">76%</p>
+                <p className="text-gray-600">Of Americans believe housing affordability is a growing problem</p>
               </div>
               
               <div className="bg-white p-6 border border-gray-200 rounded-lg shadow-sm text-center">
                 <p className="text-4xl font-bold text-bfa-red mb-2">12M+</p>
-                <p className="text-gray-600">Households spending 50%+ on housing</p>
+                <p className="text-gray-600">Households spend more than half of their income on housing</p>
               </div>
             </div>
           </div>
