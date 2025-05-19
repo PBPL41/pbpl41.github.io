@@ -1,8 +1,11 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import TestimonialCard from '@/components/ui/TestimonialCard';
 import CallToAction from '@/components/ui/CallToAction';
+import { Card } from '@/components/ui/card';
+
 const WhyItMatters = () => {
   return <main>
       {/* Hero Section */}
@@ -79,8 +82,12 @@ const WhyItMatters = () => {
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="md:w-1/3">
-                  <div className="bg-bfa-blue aspect-square flex items-center justify-center rounded-lg">
-                    
+                  {/* Image Upload Area - Changed from blue div to an image placeholder */}
+                  <div className="bg-bfa-gray rounded-lg aspect-square flex items-center justify-center border-2 border-dashed border-gray-300">
+                    <div className="text-center p-4">
+                      <p className="text-sm text-gray-500">Upload podcast cover image</p>
+                      <p className="text-xs text-gray-400 mt-1">(Square image recommended)</p>
+                    </div>
                   </div>
                 </div>
                 
@@ -107,19 +114,28 @@ const WhyItMatters = () => {
             </div>
           </div>
 
-          {/* Testimonials */}
+          {/* Testimonials - First Row */}
           <div className="mb-16">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4">Voices from Your Communities</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">What does your mayor have to say about zoning reform?</p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
               <TestimonialCard quote="We've seen firsthand how zoning reform can revitalize neighborhoods while maintaining their character. It's not about destroying communities, but enhancing them with more options for everyone." name="Michael Chen" title="Urban Planning Director" organization="City of Portland" />
               
               <TestimonialCard quote="As a developer, the biggest obstacle we face is outdated zoning. With simple reforms, we could build 30% more housing at lower price points without any government subsidies." name="Alisha Washington" title="CEO" organization="Innovative Housing Solutions" />
               
               <TestimonialCard quote="Our firefighters, teachers, and healthcare workers shouldn't have to commute two hours to serve our community. Zoning reform means they can live where they work." name="Robert Hernandez" title="Mayor" organization="City of Lakewood" />
+            </div>
+            
+            {/* Added Second Row of Testimonials */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <TestimonialCard quote="Zoning reform has allowed our town to grow responsibly. We've seen young families return and local businesses thrive with the increased foot traffic." name="Jennifer Patel" title="City Council Member" organization="Riverview Township" />
+              
+              <TestimonialCard quote="The housing shortage affects our economic competitiveness. We can't attract top talent if they have nowhere affordable to live within a reasonable commute." name="David Wilson" title="Economic Development Director" organization="Metro Chamber of Commerce" />
+              
+              <TestimonialCard quote="As a nurse, I couldn't afford to live near the hospital where I work. Thanks to new housing options from zoning changes, my commute went from 45 minutes to just 10." name="Sarah Johnson" title="Healthcare Worker" organization="Community Memorial Hospital" />
             </div>
           </div>
 
@@ -131,21 +147,23 @@ const WhyItMatters = () => {
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                 <h3 className="text-xl font-bold mb-4 text-bfa-blue">Housing Supply</h3>
                 <p className="mb-4">Zoning reforms can increase housing units by 9-13% after 10 years.</p>
-                
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <h3 className="text-xl font-bold mb-4 text-bfa-blue">Affordability</h3>
-                <p className="mb-4">
-                  When implemented effectively, zoning reforms can slow or stabilize housing cost growth by 5-15% compared to similar markets.
-                </p>
-                
+              {/* Changed Affordability box to accept an image */}
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                <h3 className="text-xl font-bold p-6 pb-2 text-bfa-blue">Affordability</h3>
+                <div className="px-6 pb-6">
+                  <div className="bg-bfa-gray-light rounded-md overflow-hidden h-40 border border-gray-200">
+                    <div className="w-full h-full flex items-center justify-center text-gray-500">
+                      <p className="text-sm">Upload affordability impact image</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                 <h3 className="text-xl font-bold mb-4 text-bfa-blue">Economic Growth</h3>
                 <p className="mb-4">Studies estimate that restrictive zoning reduced U.S. GDP growth by more than 50% from 1964 to 2009.</p>
-                
               </div>
             </div>
           </div>
