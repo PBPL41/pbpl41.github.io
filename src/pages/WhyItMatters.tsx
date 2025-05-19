@@ -46,8 +46,8 @@ const WhyItMatters = () => {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="bg-white p-6 border border-gray-200 rounded-lg shadow-sm text-center">
-                <p className="text-4xl font-bold text-bfa-red mb-2">3.8M</p>
-                <p className="text-gray-600">Housing unit shortage nationwide</p>
+                <p className="text-4xl font-bold text-bfa-red mb-2">3.7M</p>
+                <p className="text-gray-600">Unit housing shortage nationwide</p>
               </div>
               
               <div className="bg-white p-6 border border-gray-200 rounded-lg shadow-sm text-center">
