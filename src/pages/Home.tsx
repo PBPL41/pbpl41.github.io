@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home as HomeIcon, FileText, Radio, MapPin, Building, Users } from 'lucide-react';
@@ -123,7 +124,12 @@ const Home = () => {
       </section>
 
       {/* Final CTA */}
-      <CallToAction title="Join the Build for America Coalition" subtitle="Together, we can create vibrant communities with housing options for all" buttonText="Support the Campaign" buttonLink="/coalition" />
+      <CallToAction 
+        title="Join the Movement for Housing Opportunity" 
+        subtitle="Add your voice to the growing coalition supporting zoning reform" 
+        buttonText="Join the Coalition" 
+        buttonLink="/coalition" 
+      />
     </main>;
 };
 export default Home;
