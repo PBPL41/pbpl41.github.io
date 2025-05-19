@@ -73,13 +73,13 @@ const Home = () => {
             
             <Link to="/coalition" className="bg-bfa-earth text-white p-6 rounded-lg shadow-md text-center hover:brightness-95 transition-colors">
               <Users size={36} className="mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Support the Campaign</h3>
-              <p className="text-sm opacity-80">Join organizations endorsing zoning reform</p>
+              <h3 className="text-xl font-bold mb-2">Join the Coalition</h3>
+              <p className="text-sm opacity-80">Support organizations endorsing zoning reform</p>
             </Link>
             
             <Link to="/maps" className="bg-bfa-blue-dark text-white p-6 rounded-lg shadow-md text-center hover:brightness-110 transition-colors">
               <MapPin size={36} className="mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Explore Interactive Maps</h3>
+              <h3 className="text-xl font-bold mb-2">Explore Zoning in Your Community</h3>
               <p className="text-sm opacity-80">See how zoning reform impacts communities</p>
             </Link>
           </div>
