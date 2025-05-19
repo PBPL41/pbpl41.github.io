@@ -193,15 +193,14 @@ const WhyItMatters = () => {
                 <p className="mb-4">Zoning reforms can increase housing units by 9-13% after 10 years.</p>
               </div>
               
-              {/* Changed Affordability box to accept an image */}
               <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
                 <h3 className="text-xl font-bold p-6 pb-2 text-bfa-blue">Affordability</h3>
                 <div className="px-6 pb-6">
-                  <div className="bg-bfa-gray-light rounded-md overflow-hidden h-40 border border-gray-200">
-                    <div className="w-full h-full flex items-center justify-center text-gray-500">
-                      <p className="text-sm">Upload affordability impact image</p>
-                    </div>
-                  </div>
+                  <img 
+                    src="/lovable-uploads/cac904b2-9a17-473a-b79b-fc0b053caf38.png" 
+                    alt="Chart showing rent growth is slower in jurisdictions that have allowed more housing" 
+                    className="w-full rounded-md border border-gray-200"
+                  />
                 </div>
               </div>
               
