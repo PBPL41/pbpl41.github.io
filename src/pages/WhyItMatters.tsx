@@ -146,9 +146,7 @@ const WhyItMatters = () => {
               
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                 <h3 className="text-xl font-bold mb-4 text-bfa-blue">Economic Growth</h3>
-                <p className="mb-4">
-                  Communities with diverse housing options see increased economic activity, with studies showing 1.5-2x the retail spending in mixed-use areas.
-                </p>
+                <p className="mb-4">Studies estimate that restrictive zoning reduced U.S. GDP growth by more than 50% from 1964 to 2009.</p>
                 
               </div>
             </div>
