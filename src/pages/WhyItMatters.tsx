@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -6,6 +5,7 @@ import TestimonialCard from '@/components/ui/TestimonialCard';
 import CallToAction from '@/components/ui/CallToAction';
 import { Card } from '@/components/ui/card';
 import YouTubeEmbed from '@/components/ui/YouTubeEmbed';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const WhyItMatters = () => {
   return <main>
@@ -102,12 +102,15 @@ const WhyItMatters = () => {
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="md:w-1/3">
-                  {/* Image Upload Area - Changed from blue div to an image placeholder */}
-                  <div className="bg-bfa-gray rounded-lg aspect-square flex items-center justify-center border-2 border-dashed border-gray-300">
-                    <div className="text-center p-4">
-                      <p className="text-sm text-gray-500">Upload podcast cover image</p>
-                      <p className="text-xs text-gray-400 mt-1">(Square image recommended)</p>
-                    </div>
+                  {/* Replace placeholder with actual image */}
+                  <div className="rounded-lg overflow-hidden aspect-square">
+                    <AspectRatio ratio={1}>
+                      <img 
+                        src="/lovable-uploads/370b5102-86af-4d54-973f-dd3889dc8a32.png" 
+                        alt="Podcast host" 
+                        className="w-full h-full object-cover"
+                      />
+                    </AspectRatio>
                   </div>
                 </div>
                 
@@ -118,10 +121,7 @@ const WhyItMatters = () => {
                   </p>
                   
                   <div className="mb-4">
-                    
                     <div className="flex justify-between text-sm text-gray-500">
-                      
-                      
                     </div>
                   </div>
                   
