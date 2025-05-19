@@ -18,13 +18,13 @@ const Footer = () => {
             <h4 className="text-lg font-heading font-medium mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/about-policy" className="text-gray-300 hover:text-white transition-colors text-sm">About the Policy</Link>
+                <Link to="/" className="text-gray-300 hover:text-white transition-colors text-sm">Home</Link>
               </li>
               <li>
                 <Link to="/why-it-matters" className="text-gray-300 hover:text-white transition-colors text-sm">Why It Matters</Link>
               </li>
               <li>
-                <Link to="/maps" className="text-gray-300 hover:text-white transition-colors text-sm">Interactive Maps</Link>
+                <Link to="/about-policy" className="text-gray-300 hover:text-white transition-colors text-sm">About the Policy</Link>
               </li>
               <li>
                 <Link to="/coalition" className="text-gray-300 hover:text-white transition-colors text-sm">Join the Coalition</Link>
