@@ -12,7 +12,6 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   name,
   title,
   organization,
-  image
 }) => {
   return <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
       
@@ -23,7 +22,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           </div>}
         <div>
           <p className="font-bold">{name}</p>
-          <p className="text-sm text-gray-600">{title}, {organization}</p>
+          <p className="text-sm text-gray-600">{title} {organization}</p>
         </div>
       </div>
     </div>;
