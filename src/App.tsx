@@ -11,6 +11,7 @@ import WhyItMatters from "./pages/WhyItMatters";
 import JoinCoalition from "./pages/JoinCoalition";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import ScrollToTop from "./components/util/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <div className="flex flex-col min-h-screen">
           <Header />
           <div className="flex-grow">
