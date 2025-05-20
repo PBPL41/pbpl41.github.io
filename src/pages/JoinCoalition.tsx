@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import TestimonialCard from '@/components/ui/TestimonialCard';
+import { Link } from 'react-router-dom';
 
 interface OrganizationProps {
   name: string;
@@ -168,17 +167,14 @@ const JoinCoalition = () => {
         </div>
       </section>
 
-      {/* Testimonial */}
+      {/* Call To Action - Replacing Testimonial */}
       <section className="py-12 bg-bfa-sand">
         <div className="container-wide">
-          <div className="max-w-3xl mx-auto">
-            <TestimonialCard 
-              quote="By working together across political lines and geographic boundaries, we can solve our country's housing crisis and create more equitable, sustainable communities for all Americans."
-              name="Jane Smith"
-              title="Executive Director"
-              organization="Build for America"
-              image="/placeholder.svg"
-            />
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-2xl font-bold mb-6">Grow Our Coalition</h3>
+            <p className="text-xl mb-6">
+              Know an organization doing great zoning reform work? <Link to="/contact" className="text-bfa-blue-dark hover:text-bfa-blue font-semibold underline">Contact us</Link> to get them added.
+            </p>
           </div>
         </div>
       </section>
