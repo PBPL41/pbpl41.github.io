@@ -1,5 +1,4 @@
 
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import AboutPolicy from "./pages/AboutPolicy";
 import WhyItMatters from "./pages/WhyItMatters";
+import JoinCoalition from "./pages/JoinCoalition";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 
@@ -27,6 +27,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/about-policy" element={<AboutPolicy />} />
               <Route path="/why-it-matters" element={<WhyItMatters />} />
+              <Route path="/coalition" element={<JoinCoalition />} />
               
               {/* City pages routes */}
               <Route path="/cities/boston" element={<NotFound />} />
@@ -38,7 +39,6 @@ const App = () => (
               
               {/* These routes will be implemented in future iterations */}
               <Route path="/maps" element={<NotFound />} />
-              <Route path="/coalition" element={<NotFound />} />
               <Route path="/media" element={<NotFound />} />
               <Route path="/events" element={<NotFound />} />
               <Route path="/contact" element={<NotFound />} />
