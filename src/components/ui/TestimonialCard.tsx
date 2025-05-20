@@ -15,7 +15,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 }) => {
   return <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
       
-      <p className="mb-6 italic text-gray-700 text-base">{quote}</p>
+      <p className="mb-6 italic text-gray-700 text-base text-center">{quote}</p>
       
     </div>;
 };
