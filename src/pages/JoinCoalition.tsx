@@ -127,7 +127,7 @@ const JoinCoalition = () => {
             <p className="text-lg mb-6">Build for America is proud to work alongside a diverse coalition of organizations committed to creating more abundant, affordable housing through zoning reform. Our trusted partners are leading the way in advocating for policy changes that expand housing options in local communities across the country.</p>
             <p className="text-lg mb-6">Together, we aim to grow an ever-stronger coalition of advocates, planners, elected officials, and everyday Americans united in the belief that zoning reform is essential to housing justice. By supporting each other's efforts — locally and nationally — we can amplify our collective voice, build momentum, and ultimately put sustained pressure on Congress to pass federal legislation.</p>
             <p className="text-lg mb-6">This coalition is more than a list of names—it's a shared commitment to real solutions, and a movement to ensure everyone has a place to call home.</p>
-            <p className="text-lg mb-6">Our coalition brings together a diverse group of stakeholders from across the political spectrum, including housing advocates, urban planners, economists, faith leaders, business owners, and community organizers. This broad-based approach ensures that our advocacy efforts reflect the needs and perspectives of all Americans who believe in the power of housing reform to strengthen our communities.</p>
+            
           </div>
         </div>
       </section>
