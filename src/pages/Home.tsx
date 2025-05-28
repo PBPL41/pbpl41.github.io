@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home as HomeIcon, FileText, Radio, MapPin, Building, Users } from 'lucide-react';
@@ -11,19 +10,10 @@ const Home = () => {
       <section className="bg-gradient-to-br from-bfa-blue to-bfa-blue-dark text-white">
         <div className="container-wide py-16 md:py-24 min-h-[60vh] flex flex-col justify-center">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-6 mb-8">
-              <img 
-                src="/lovable-uploads/e88e7e97-efa9-4dcd-b5b9-31915b62b535.png" 
-                alt="Build for America Logo" 
-                className="h-24 w-auto md:h-32" 
-              />
-              <div>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fade-in">
-                  Build for America
-                </h1>
-                <p className="text-xl sm:text-2xl md:text-3xl mb-8 font-heading font-medium">More homes. Stronger communities.</p>
-              </div>
-            </div>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fade-in">
+              Build for America
+            </h1>
+            <p className="text-xl sm:text-2xl md:text-3xl mb-8 font-heading font-medium">More homes. Stronger communities.</p>
             <p className="text-lg opacity-90 mb-8 max-w-2xl">
               A federal competitive grant program incentivizing local zoning reform to create more housing and address America's affordability crisis.
             </p>
