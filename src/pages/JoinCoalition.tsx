@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Link } from 'react-router-dom';
+
 interface OrganizationProps {
   name: string;
   description: string;
@@ -43,7 +44,8 @@ const JoinCoalition = () => {
     description: "Offers tools and information to empower advocates in creating zoning changes within their communities.",
     website: "https://zoningatlas.org"
   }];
-  return <main className="bg-bfa-gray-light min-h-screen">
+  return (
+    <main className="bg-bfa-gray-light min-h-screen">
       {/* Hero Section */}
       <section className="bg-bfa-blue-dark text-white py-16 md:py-24">
         <div className="container-wide">
@@ -57,7 +59,7 @@ const JoinCoalition = () => {
       </section>
 
       {/* Get Involved Section */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-bfa-sand">
         <div className="container-wide">
           <h2 className="text-3xl font-bold mb-8 text-center">Get Involved</h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -79,7 +81,12 @@ const JoinCoalition = () => {
                       <DialogTitle>Subscribe to Our Newsletter</DialogTitle>
                     </DialogHeader>
                     <div className="space-y-4">
-                      <Input type="email" placeholder="Enter your email address" value={email} onChange={e => setEmail(e.target.value)} />
+                      <Input
+                        type="email"
+                        placeholder="Enter your email address"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
                       <Button className="w-full bg-bfa-blue hover:bg-bfa-blue-dark text-white">
                         Subscribe
                       </Button>
@@ -118,49 +125,72 @@ const JoinCoalition = () => {
       </section>
 
       {/* Coalition Description */}
-      <section className="py-12 bg-bfa-gray-light">
+      <section className="py-12 bg-white">
         <div className="container-wide">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">The Housing Coalition</h2>
             <p className="text-lg mb-6">Build for America is proud to work alongside a diverse coalition of organizations committed to creating more abundant, affordable housing through zoning reform. Our trusted partners are leading the way in advocating for policy changes that expand housing options in local communities across the country.</p>
             <p className="text-lg mb-6">Together, we aim to grow an ever-stronger coalition of advocates, planners, elected officials, and everyday Americans united in the belief that zoning reform is essential to housing justice. By supporting each other's efforts — locally and nationally — we can amplify our collective voice, build momentum, and ultimately put sustained pressure on Congress to pass federal legislation.</p>
             <p className="text-lg mb-6">This coalition is more than a list of names—it's a shared commitment to real solutions, and a movement to ensure everyone has a place to call home.</p>
-            
           </div>
         </div>
       </section>
 
       {/* Find Local Organizations */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-bfa-gray-light">
         <div className="container-wide">
           <h2 className="text-3xl font-bold mb-8 text-center">Find a Local Zoning Reform Organization Near You</h2>
           <div className="max-w-md mx-auto">
-            <Input type="text" placeholder="Enter your city, state, or ZIP code" value={searchLocation} onChange={e => setSearchLocation(e.target.value)} className="text-center" />
+            <Input
+              type="text"
+              placeholder="Enter your city, state, or ZIP code"
+              value={searchLocation}
+              onChange={(e) => setSearchLocation(e.target.value)}
+              className="text-center"
+            />
           </div>
         </div>
       </section>
 
       {/* National Organizations */}
-      <section className="py-12 bg-bfa-gray-light">
+      <section className="py-12 bg-bfa-earth text-white">
         <div className="container-wide">
-          <h2 className="text-3xl font-bold mb-8">Our National Partners</h2>
+          <h2 className="text-3xl font-bold mb-8 text-white">Our National Partners</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {nationalOrganizations.map(org => <OrganizationCard key={org.name} name={org.name} description={org.description} website={org.website} />)}
+            {nationalOrganizations.map((org) => (
+              <Card key={org.name} className="mb-4 hover:shadow-md transition-shadow bg-white">
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-lg sm:text-xl">{org.name}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-3">{org.description}</p>
+                  <a
+                    href={org.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-bfa-blue hover:text-bfa-blue-dark font-medium"
+                  >
+                    Visit Website <ExternalLink size={16} className="ml-1" />
+                  </a>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Call To Action - Grow Our Coalition */}
-      <section className="py-12 bg-bfa-sand">
+      <section className="py-12 bg-bfa-blue">
         <div className="container-wide">
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold mb-6">Grow Our Coalition</h3>
-            <p className="text-xl mb-6">
-              Know an organization doing great zoning reform work? <Link to="/contact" className="text-bfa-blue-dark hover:text-bfa-blue font-semibold underline">Contact us</Link> to get them added.
+            <h3 className="text-2xl font-bold mb-6 text-white">Grow Our Coalition</h3>
+            <p className="text-xl mb-6 text-white">
+              Know an organization doing great zoning reform work? <Link to="/contact" className="text-bfa-sand hover:text-white font-semibold underline">Contact us</Link> to get them added.
             </p>
           </div>
         </div>
       </section>
-    </main>;
+    </main>
+  );
 };
 export default JoinCoalition;
