@@ -1,11 +1,9 @@
-
 import React, { useState } from 'react';
 import { ExternalLink, Mail, Calendar, Pen } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import { Textarea } from '@/components/ui/textarea';
 import { Link } from 'react-router-dom';
 
 interface OrganizationProps {
@@ -13,7 +11,6 @@ interface OrganizationProps {
   description: string;
   website: string;
 }
-
 const OrganizationCard: React.FC<OrganizationProps> = ({
   name,
   description,
@@ -31,17 +28,9 @@ const OrganizationCard: React.FC<OrganizationProps> = ({
       </CardContent>
     </Card>;
 };
-
 const JoinCoalition = () => {
   const [email, setEmail] = useState('');
   const [searchLocation, setSearchLocation] = useState('');
-  const [isEditing, setIsEditing] = useState(false);
-  const [coalitionText, setCoalitionText] = useState({
-    paragraph1: "Build for America is proud to work alongside a diverse coalition of organizations committed to creating more abundant, affordable housing through zoning reform. Our trusted partners are leading the way in advocating for policy changes that expand housing options in local communities across the country.",
-    paragraph2: "Together, we aim to grow an ever-stronger coalition of advocates, planners, elected officials, and everyday Americans united in the belief that zoning reform is essential to housing justice. By supporting each other's efforts — locally and nationally — we can amplify our collective voice, build momentum, and ultimately put sustained pressure on Congress to pass federal legislation.",
-    paragraph3: "This coalition is more than a list of names—it's a shared commitment to real solutions, and a movement to ensure everyone has a place to call home."
-  });
-
   const nationalOrganizations = [{
     name: "YIMBY Action",
     description: "A national network advocating for abundant, affordable housing through zoning reform.",
@@ -55,11 +44,6 @@ const JoinCoalition = () => {
     description: "Offers tools and information to empower advocates in creating zoning changes within their communities.",
     website: "https://zoningatlas.org"
   }];
-
-  const handleSaveText = () => {
-    setIsEditing(false);
-  };
-
   return (
     <main className="bg-bfa-gray-light min-h-screen">
       {/* Hero Section */}
@@ -144,46 +128,10 @@ const JoinCoalition = () => {
       <section className="py-12 bg-white">
         <div className="container-wide">
           <div className="max-w-4xl mx-auto">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-3xl font-bold">The Housing Coalition</h2>
-              <Button 
-                onClick={() => setIsEditing(!isEditing)}
-                variant="outline"
-                className="flex items-center gap-2"
-              >
-                <Pen size={16} />
-                {isEditing ? 'Cancel' : 'Edit'}
-              </Button>
-            </div>
-            
-            {isEditing ? (
-              <div className="space-y-4">
-                <Textarea
-                  value={coalitionText.paragraph1}
-                  onChange={(e) => setCoalitionText({...coalitionText, paragraph1: e.target.value})}
-                  className="min-h-[100px]"
-                />
-                <Textarea
-                  value={coalitionText.paragraph2}
-                  onChange={(e) => setCoalitionText({...coalitionText, paragraph2: e.target.value})}
-                  className="min-h-[100px]"
-                />
-                <Textarea
-                  value={coalitionText.paragraph3}
-                  onChange={(e) => setCoalitionText({...coalitionText, paragraph3: e.target.value})}
-                  className="min-h-[60px]"
-                />
-                <Button onClick={handleSaveText} className="bg-bfa-blue hover:bg-bfa-blue-dark text-white">
-                  Save Changes
-                </Button>
-              </div>
-            ) : (
-              <div>
-                <p className="text-lg mb-6">{coalitionText.paragraph1}</p>
-                <p className="text-lg mb-6">{coalitionText.paragraph2}</p>
-                <p className="text-lg mb-6">{coalitionText.paragraph3}</p>
-              </div>
-            )}
+            <h2 className="text-3xl font-bold mb-6 text-center">The Housing Coalition</h2>
+            <p className="text-lg mb-6">Build for America is proud to work alongside a diverse coalition of organizations committed to creating more abundant, affordable housing through zoning reform. Our trusted partners are leading the way in advocating for policy changes that expand housing options in local communities across the country.</p>
+            <p className="text-lg mb-6">Together, we aim to grow an ever-stronger coalition of advocates, planners, elected officials, and everyday Americans united in the belief that zoning reform is essential to housing justice. By supporting each other's efforts — locally and nationally — we can amplify our collective voice, build momentum, and ultimately put sustained pressure on Congress to pass federal legislation.</p>
+            <p className="text-lg mb-6">This coalition is more than a list of names—it's a shared commitment to real solutions, and a movement to ensure everyone has a place to call home.</p>
           </div>
         </div>
       </section>
@@ -245,5 +193,4 @@ const JoinCoalition = () => {
     </main>
   );
 };
-
 export default JoinCoalition;
