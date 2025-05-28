@@ -1,15 +1,12 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
   return <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container-wide flex justify-between items-center py-4">
         <div className="flex items-center">
@@ -29,7 +26,7 @@ const Header = () => {
 
         {/* CTA Button - Desktop */}
         <div className="hidden lg:block">
-          <Button className="bg-bfa-blue hover:bg-bfa-blue-dark text-white">Support Now</Button>
+          <Button className="bg-bfa-blue hover:bg-bfa-blue-dark text-white">Donate</Button>
         </div>
 
         {/* Mobile Menu Button */}
