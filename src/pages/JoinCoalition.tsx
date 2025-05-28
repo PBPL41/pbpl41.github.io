@@ -128,10 +128,9 @@ const JoinCoalition = () => {
       <section className="py-12 bg-white">
         <div className="container-wide">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-center">The Housing Coalition</h2>
-            <p className="text-lg mb-6">Build for America is proud to work alongside a diverse coalition of organizations committed to creating more abundant, affordable housing through zoning reform. Our trusted partners are leading the way in advocating for policy changes that expand housing options in local communities across the country.</p>
-            <p className="text-lg mb-6">Together, we aim to grow an ever-stronger coalition of advocates, planners, elected officials, and everyday Americans united in the belief that zoning reform is essential to housing justice. By supporting each other's efforts — locally and nationally — we can amplify our collective voice, build momentum, and ultimately put sustained pressure on Congress to pass federal legislation.</p>
-            <p className="text-lg mb-6">This coalition is more than a list of names—it's a shared commitment to real solutions, and a movement to ensure everyone has a place to call home.</p>
+            <h2 className="text-3xl font-bold mb-6 text-center">The Build for America Coalition</h2>
+            <p className="text-lg mb-6">Build for America works alongside a growing network of organizations advancing zoning reform to expand affordable housing nationwide. Our partners lead efforts to change local policy and unlock more housing options in their communities.</p>
+            <p className="text-lg mb-6">By joining forces — locally and nationally — we amplify our voice, share strategies, and increase pressure on Congress to pass meaningful federal legislation. This coalition is more than a list of names — it's a shared commitment to real solutions, and a movement to ensure everyone has a place to call home.</p>
           </div>
         </div>
       </section>
