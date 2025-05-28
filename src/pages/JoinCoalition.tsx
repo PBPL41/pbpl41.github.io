@@ -145,7 +145,7 @@ const JoinCoalition = () => {
       {/* National Organizations */}
       <section className="py-12 bg-bfa-gray-light">
         <div className="container-wide">
-          <h2 className="text-3xl font-bold mb-8">National Organizations</h2>
+          <h2 className="text-3xl font-bold mb-8">Our National Partners</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {nationalOrganizations.map(org => <OrganizationCard key={org.name} name={org.name} description={org.description} website={org.website} />)}
           </div>
