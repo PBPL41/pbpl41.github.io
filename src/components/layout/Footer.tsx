@@ -11,7 +11,7 @@ const Footer = () => {
               <img src="/lovable-uploads/8d635ce6-d8ff-49b6-b9db-4e616cd26640.png" alt="Build for America Logo" className="h-10 w-auto bg-white p-1 rounded" />
               <span className="font-heading font-bold text-lg">Build for America</span>
             </Link>
-            <p className="text-sm text-gray-300 mt-4">Advocating for zoning reform to create more affordable housing and stronger communities across America.</p>
+            <p className="text-sm text-gray-300 mt-4">Advocating for zoning reform to create more affordable housing and stronger communities across America through a competitive federal grant program.</p>
           </div>
 
           <div>
