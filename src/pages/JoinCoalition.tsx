@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ExternalLink, Mail, Calendar, Download } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -6,62 +5,45 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Link } from 'react-router-dom';
-
 interface OrganizationProps {
   name: string;
   description: string;
   website: string;
 }
-
 const OrganizationCard: React.FC<OrganizationProps> = ({
   name,
   description,
   website
 }) => {
-  return (
-    <Card className="mb-4 hover:shadow-md transition-shadow">
+  return <Card className="mb-4 hover:shadow-md transition-shadow">
       <CardHeader className="pb-2">
         <CardTitle className="text-lg sm:text-xl">{name}</CardTitle>
       </CardHeader>
       <CardContent>
         <p className="text-gray-600 mb-3">{description}</p>
-        <a 
-          href={website} 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="inline-flex items-center text-bfa-blue hover:text-bfa-blue-dark font-medium"
-        >
+        <a href={website} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-bfa-blue hover:text-bfa-blue-dark font-medium">
           Visit Website <ExternalLink size={16} className="ml-1" />
         </a>
       </CardContent>
-    </Card>
-  );
+    </Card>;
 };
-
 const JoinCoalition = () => {
   const [email, setEmail] = useState('');
   const [searchLocation, setSearchLocation] = useState('');
-
-  const nationalOrganizations = [
-    {
-      name: "YIMBY Action",
-      description: "A national network advocating for abundant, affordable housing through zoning reform.",
-      website: "https://yimbyaction.org"
-    },
-    {
-      name: "Smart Growth America",
-      description: "Provides technical assistance and advocates for zoning reforms that support smart growth and equitable development.",
-      website: "https://smartgrowthamerica.org"
-    },
-    {
-      name: "National Zoning Atlas",
-      description: "Offers tools and information to empower advocates in creating zoning changes within their communities.",
-      website: "https://zoningatlas.org"
-    }
-  ];
-
-  return (
-    <main className="bg-bfa-gray-light min-h-screen">
+  const nationalOrganizations = [{
+    name: "YIMBY Action",
+    description: "A national network advocating for abundant, affordable housing through zoning reform.",
+    website: "https://yimbyaction.org"
+  }, {
+    name: "Smart Growth America",
+    description: "Provides technical assistance and advocates for zoning reforms that support smart growth and equitable development.",
+    website: "https://smartgrowthamerica.org"
+  }, {
+    name: "National Zoning Atlas",
+    description: "Offers tools and information to empower advocates in creating zoning changes within their communities.",
+    website: "https://zoningatlas.org"
+  }];
+  return <main className="bg-bfa-gray-light min-h-screen">
       {/* Hero Section */}
       <section className="bg-bfa-blue-dark text-white py-16 md:py-24">
         <div className="container-wide">
@@ -99,12 +81,7 @@ const JoinCoalition = () => {
                       <DialogTitle>Subscribe to Our Newsletter</DialogTitle>
                     </DialogHeader>
                     <div className="space-y-4">
-                      <Input
-                        type="email"
-                        placeholder="Enter your email address"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                      />
+                      <Input type="email" placeholder="Enter your email address" value={email} onChange={e => setEmail(e.target.value)} />
                       <Button className="w-full bg-bfa-blue hover:bg-bfa-blue-dark text-white">
                         Subscribe
                       </Button>
@@ -133,9 +110,7 @@ const JoinCoalition = () => {
               <CardContent className="pt-6">
                 <Download className="w-12 h-12 mx-auto mb-4 text-bfa-blue" />
                 <h3 className="text-xl font-semibold mb-3">Write a Letter to the Editor</h3>
-                <p className="text-gray-600 mb-4">
-                  Help shape public opinion by submitting a letter to your local newspaper. Use our template to get started.
-                </p>
+                <p className="text-gray-600 mb-4">Help shape public opinion by submitting a letter to your local newspaper. See our examples to get started.</p>
                 <Button className="bg-bfa-blue hover:bg-bfa-blue-dark text-white">
                   Download Guide
                 </Button>
@@ -164,13 +139,7 @@ const JoinCoalition = () => {
         <div className="container-wide">
           <h2 className="text-3xl font-bold mb-8 text-center">Find a Local Zoning Reform Organization Near You</h2>
           <div className="max-w-md mx-auto">
-            <Input
-              type="text"
-              placeholder="Enter your city, state, or ZIP code"
-              value={searchLocation}
-              onChange={(e) => setSearchLocation(e.target.value)}
-              className="text-center"
-            />
+            <Input type="text" placeholder="Enter your city, state, or ZIP code" value={searchLocation} onChange={e => setSearchLocation(e.target.value)} className="text-center" />
           </div>
         </div>
       </section>
@@ -180,14 +149,7 @@ const JoinCoalition = () => {
         <div className="container-wide">
           <h2 className="text-3xl font-bold mb-8">National Organizations</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {nationalOrganizations.map(org => (
-              <OrganizationCard 
-                key={org.name} 
-                name={org.name} 
-                description={org.description} 
-                website={org.website} 
-              />
-            ))}
+            {nationalOrganizations.map(org => <OrganizationCard key={org.name} name={org.name} description={org.description} website={org.website} />)}
           </div>
         </div>
       </section>
@@ -203,8 +165,6 @@ const JoinCoalition = () => {
           </div>
         </div>
       </section>
-    </main>
-  );
+    </main>;
 };
-
 export default JoinCoalition;
