@@ -111,9 +111,7 @@ const JoinCoalition = () => {
                 <Download className="w-12 h-12 mx-auto mb-4 text-bfa-blue" />
                 <h3 className="text-xl font-semibold mb-3">Write a Letter to the Editor</h3>
                 <p className="text-gray-600 mb-4">Help shape public opinion by submitting a letter to your local newspaper. See our examples to get started.</p>
-                <Button className="bg-bfa-blue hover:bg-bfa-blue-dark text-white">
-                  Download Guide
-                </Button>
+                <Button className="bg-bfa-blue hover:bg-bfa-blue-dark text-white">Download Examples</Button>
               </CardContent>
             </Card>
 
