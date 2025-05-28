@@ -3,6 +3,7 @@ import { ExternalLink } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Link } from 'react-router-dom';
+
 interface OrganizationProps {
   name: string;
   description: string;
@@ -87,8 +88,9 @@ const JoinCoalition = () => {
             <p className="text-lg mb-6">Build for America is proud to work alongside a diverse coalition of organizations committed to creating more abundant, affordable housing through zoning reform. Our trusted partners are leading the way in advocating for policy changes that expand housing options in local communities across the country.
 
 
-Together, we aim to grow an ever-stronger coalition of advocates, planners, elected officials, and everyday Americans united in the belief that zoning reform is essential to housing justice. By supporting each other’s efforts — locally and nationally — we can amplify our collective voice, build momentum, and ultimately put sustained pressure on Congress to pass federal legislation.</p>
-            <p className="text-lg mb-6">This coalition is more than a list of names—it’s a shared commitment to real solutions, and a movement to ensure everyone has a place to call home.</p>
+Together, we aim to grow an ever-stronger coalition of advocates, planners, elected officials, and everyday Americans united in the belief that zoning reform is essential to housing justice. By supporting each other's efforts — locally and nationally — we can amplify our collective voice, build momentum, and ultimately put sustained pressure on Congress to pass federal legislation.</p>
+            <p className="text-lg mb-6">Our coalition represents a powerful alliance of diverse voices working toward a common goal. From grassroots advocates to policy experts, from community organizers to housing developers, we bring together stakeholders from across the housing ecosystem. This collaborative approach ensures that our solutions are comprehensive, equitable, and effective in addressing the housing challenges facing communities nationwide.</p>
+            <p className="text-lg mb-6">This coalition is more than a list of names—it's a shared commitment to real solutions, and a movement to ensure everyone has a place to call home.</p>
           </div>
         </div>
       </section>
