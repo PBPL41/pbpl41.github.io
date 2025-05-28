@@ -67,9 +67,7 @@ const JoinCoalition = () => {
               <CardContent className="pt-6">
                 <Mail className="w-12 h-12 mx-auto mb-4 text-bfa-blue" />
                 <h3 className="text-xl font-semibold mb-3">Sign Up for Our Monthly Newsletter</h3>
-                <p className="text-gray-600 mb-4">
-                  Want to stay informed or share your story? If you have a zoning success from your town or a challenge to spotlight, submit to our newsletter team.
-                </p>
+                <p className="text-gray-600 mb-4">Have a zoning win or challenge to share? Submit it and stay informed with our monthly newsletter.</p>
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button className="bg-bfa-blue hover:bg-bfa-blue-dark text-white">
