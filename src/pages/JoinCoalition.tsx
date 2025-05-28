@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Link } from 'react-router-dom';
+
 interface OrganizationProps {
   name: string;
   description: string;
@@ -43,7 +44,8 @@ const JoinCoalition = () => {
     description: "Offers tools and information to empower advocates in creating zoning changes within their communities.",
     website: "https://zoningatlas.org"
   }];
-  return <main className="bg-bfa-gray-light min-h-screen">
+  return (
+    <main className="bg-bfa-gray-light min-h-screen">
       {/* Hero Section */}
       <section className="bg-bfa-blue-dark text-white py-16 md:py-24">
         <div className="container-wide">
@@ -136,8 +138,14 @@ const JoinCoalition = () => {
       <section className="py-12 bg-white">
         <div className="container-wide">
           <h2 className="text-3xl font-bold mb-8 text-center">Find a Local Zoning Reform Organization Near You</h2>
-          <div className="max-w-md mx-auto">
-            <Input type="text" placeholder="Enter your city, state, or ZIP code" value={searchLocation} onChange={e => setSearchLocation(e.target.value)} className="text-center" />
+          <div className="max-w-lg mx-auto">
+            <Input
+              type="text"
+              placeholder="Enter your city, state, or ZIP code"
+              value={searchLocation}
+              onChange={(e) => setSearchLocation(e.target.value)}
+              className="text-center"
+            />
           </div>
         </div>
       </section>
@@ -163,6 +171,7 @@ const JoinCoalition = () => {
           </div>
         </div>
       </section>
-    </main>;
+    </main>
+  );
 };
 export default JoinCoalition;
