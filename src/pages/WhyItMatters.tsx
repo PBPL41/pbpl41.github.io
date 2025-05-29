@@ -75,17 +75,9 @@ const WhyItMatters = () => {
   ];
 
   return <main>
-      {/* Hero Section with Background Image */}
-      <section className="relative bg-bfa-earth text-white py-16 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1460574283810-2aab119d8511?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-            alt="Modern apartment buildings" 
-            className="w-full h-full object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-bfa-earth opacity-80"></div>
-        </div>
-        <div className="container-wide relative z-10">
+      {/* Hero Section */}
+      <section className="bg-bfa-earth text-white py-16">
+        <div className="container-wide">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Why It Matters</h1>
             <p className="text-xl">
@@ -102,15 +94,13 @@ const WhyItMatters = () => {
           <div className="mb-16">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="bg-bfa-gray-light rounded-lg overflow-hidden h-80">
-                <img 
-                  alt="Essential workers in community" 
-                  className="w-full h-full object-cover" 
-                  src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                />
+                <img alt="Teacher working from home" className="w-full h-full object-cover" src="/lovable-uploads/867536c5-50cf-4c0f-8fdf-7e1f645524b4.png" />
               </div>
               <div>
                 <h2 className="text-3xl font-bold mb-4 text-bfa-blue-dark">The Housing Crisis Is Undeniable</h2>
                 <p className="text-lg mb-4">America's housing shortage is reshaping communities, pushing essential workers, young families, and seniors further from opportunity, stability, and belonging. This crisis isn't abstract — it's on every block where teachers, nurses, and service workers are commuting longer, paying more, and living with less.</p>
+                
+                
               </div>
             </div>
           </div>
@@ -173,6 +163,7 @@ const WhyItMatters = () => {
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="md:w-1/3">
+                  {/* Replace placeholder with actual image */}
                   <div className="rounded-lg overflow-hidden aspect-square">
                     <AspectRatio ratio={1}>
                       <img src="/lovable-uploads/370b5102-86af-4d54-973f-dd3889dc8a32.png" alt="Podcast host" className="w-full h-full object-cover" />
@@ -229,11 +220,11 @@ const WhyItMatters = () => {
             </div>
           </div>
 
-          {/* Impact Section with Enhanced Images */}
+          {/* Impact Section - IMPROVED LAYOUT */}
           <div className="bg-bfa-sand p-6 md:p-8 rounded-lg">
             <h2 className="text-3xl font-bold mb-6 text-bfa-blue-dark text-center">The Impact of Zoning Reform</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <FeatureCard title="Housing Supply" description="Zoning reforms can increase housing units by 9-13% after 10 years." className="p-0 h-full flex flex-col" />
               
               <FeatureCard title="Affordability" className="p-0 h-full flex flex-col overflow-hidden md:col-span-2 lg:col-span-1" contentClassName="flex-grow">
@@ -243,33 +234,6 @@ const WhyItMatters = () => {
               </FeatureCard>
               
               <FeatureCard title="Economic Growth" description="Studies estimate that restrictive zoning reduced U.S. GDP growth by more than 50% from 1964 to 2009." className="p-0 h-full flex flex-col" />
-            </div>
-
-            {/* Additional Visual Impact Section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-              <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Modern mixed-use development" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Mixed-Use Development</h3>
-                  <p className="text-gray-600">Smart zoning allows communities to blend residential, retail, and office spaces for vibrant neighborhoods.</p>
-                </div>
-              </div>
-              
-              <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="https://images.unsplash.com/photo-1493397212122-2b85dda8106b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Sustainable urban planning" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Transit-Oriented Growth</h3>
-                  <p className="text-gray-600">Building near transit reduces car dependency and creates more sustainable, connected communities.</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

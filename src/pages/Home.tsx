@@ -1,24 +1,14 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home as HomeIcon, FileText, Radio, MapPin, Building, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import CallToAction from '@/components/ui/CallToAction';
 import FeatureCard from '@/components/ui/FeatureCard';
-
 const Home = () => {
   return <main>
-      {/* Hero Section with Background Image */}
-      <section className="relative bg-gradient-to-br from-bfa-blue to-bfa-blue-dark text-white overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-            alt="Community neighborhood with diverse housing" 
-            className="w-full h-full object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-bfa-blue/80 to-bfa-blue-dark/80"></div>
-        </div>
-        <div className="container-wide py-16 md:py-24 min-h-[60vh] flex flex-col justify-center relative z-10">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-bfa-blue to-bfa-blue-dark text-white">
+        <div className="container-wide py-16 md:py-24 min-h-[60vh] flex flex-col justify-center">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fade-in">
               Build for America
@@ -94,7 +84,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Key Issue Highlight with Enhanced Visuals */}
+      {/* Key Issue Highlight */}
       <section className="py-16 bg-bfa-sand">
         <div className="container-wide">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -107,15 +97,6 @@ const Home = () => {
               <Button asChild className="bg-bfa-blue hover:bg-bfa-blue-dark text-white">
                 <Link to="/why-it-matters">Learn Why It Matters</Link>
               </Button>
-              
-              {/* Additional Visual Element */}
-              <div className="mt-8 bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Housing affordability data visualization" 
-                  className="w-full h-32 object-cover"
-                />
-              </div>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
               <h3 className="text-2xl font-bold mb-4 text-bfa-blue">Housing by the Numbers</h3>
