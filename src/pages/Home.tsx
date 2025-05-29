@@ -4,17 +4,12 @@ import { Home as HomeIcon, FileText, Radio, MapPin, Building, Users } from 'luci
 import { Button } from '@/components/ui/button';
 import CallToAction from '@/components/ui/CallToAction';
 import FeatureCard from '@/components/ui/FeatureCard';
-
 const Home = () => {
   return <main>
       {/* Hero Section with Background Image */}
       <section className="relative bg-gradient-to-br from-bfa-blue to-bfa-blue-dark text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/lovable-uploads/89127695-96ee-40dc-8e9f-bc5043c02213.png" 
-            alt="Build for America Banner - Community neighborhood with diverse housing" 
-            className="w-full h-full object-cover opacity-20"
-          />
+          <img src="/lovable-uploads/89127695-96ee-40dc-8e9f-bc5043c02213.png" alt="Build for America Banner - Community neighborhood with diverse housing" className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-br from-bfa-blue/10 to-bfa-blue-dark/10"></div>
         </div>
         <div className="container-wide py-16 md:py-24 min-h-[60vh] flex flex-col justify-center relative z-10">
@@ -86,7 +81,7 @@ const Home = () => {
             
             <Link to="/maps" className="bg-bfa-blue-dark text-white p-6 rounded-lg shadow-md text-center hover:brightness-110 transition-colors">
               <MapPin size={36} className="mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Explore Zoning in Your Community</h3>
+              <h3 className="text-xl font-bold mb-2">Explore Testimonials</h3>
               <p className="text-sm opacity-80">See how zoning reform impacts communities</p>
             </Link>
           </div>
@@ -109,11 +104,7 @@ const Home = () => {
               
               {/* Additional Visual Element */}
               <div className="mt-8 bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Housing affordability data visualization" 
-                  className="w-full h-32 object-cover"
-                />
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Housing affordability data visualization" className="w-full h-32 object-cover" />
               </div>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
