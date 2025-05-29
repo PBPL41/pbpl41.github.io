@@ -15,7 +15,7 @@ const Home = () => {
             alt="Build for America Banner - Community neighborhood with diverse housing" 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-bfa-blue/30 to-bfa-blue-dark/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-bfa-blue/10 to-bfa-blue-dark/10"></div>
         </div>
         <div className="container-wide py-16 md:py-24 min-h-[60vh] flex flex-col justify-center relative z-10">
           <div className="max-w-3xl">
