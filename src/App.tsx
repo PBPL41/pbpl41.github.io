@@ -31,6 +31,7 @@ const App = () => (
               <Route path="/about-policy" element={<AboutPolicy />} />
               <Route path="/why-it-matters" element={<WhyItMatters />} />
               <Route path="/coalition" element={<JoinCoalition />} />
+              <Route path="/stories" element={<StoriesFromCommunity />} />
               
               {/* City pages routes */}
               <Route path="/cities/boston" element={<NotFound />} />
