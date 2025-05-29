@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Download, FileText, Building, Home, Clock, Car } from 'lucide-react';
@@ -7,8 +8,9 @@ import CallToAction from '@/components/ui/CallToAction';
 const AboutPolicy = () => {
   return <main>
       {/* Hero Section */}
-      <section className="bg-bfa-blue text-white py-16">
-        <div className="container-wide">
+      <section className="relative bg-bfa-blue text-white py-16 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/8828377f-cb94-4a75-b9e7-89e492b83d9e.png)'}}>
+        <div className="absolute inset-0 bg-bfa-blue bg-opacity-10"></div>
+        <div className="container-wide relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">About the Policy</h1>
             <p className="text-xl">
