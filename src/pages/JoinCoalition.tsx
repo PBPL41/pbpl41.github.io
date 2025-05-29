@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ExternalLink, Mail, Calendar, Pen } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -48,8 +47,9 @@ const JoinCoalition = () => {
   return (
     <main className="bg-bfa-gray-light min-h-screen">
       {/* Hero Section */}
-      <section className="bg-bfa-blue-dark text-white py-16 md:py-24">
-        <div className="container-wide">
+      <section className="relative bg-bfa-blue-dark text-white py-16 md:py-24 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/01e9ada5-a74f-4b84-b6b2-86b65409f381.png)'}}>
+        <div className="absolute inset-0 bg-bfa-blue-dark bg-opacity-80"></div>
+        <div className="container-wide relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-bold mb-4">Join the Coalition</h1>
             <p className="text-xl mb-8 opacity-90">
