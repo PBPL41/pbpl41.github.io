@@ -8,7 +8,6 @@ import YouTubeEmbed from '@/components/ui/YouTubeEmbed';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import FeatureCard from '@/components/ui/FeatureCard';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-
 const WhyItMatters = () => {
   const testimonials = [{
     quote: "Zoning should reflect the shared vision of our future growth. It should fit together the pieces of where we are now, where we're trying to go, and how we get there. We plan to transform Boston's zoning code into one that enables Boston to be a family-first, thriving city that is bustling with innovation.",
@@ -56,13 +55,12 @@ const WhyItMatters = () => {
     title: "Former Mayor",
     organization: "San Diego, CA"
   }];
-  
   return <main>
       {/* Hero Section with Background Image */}
       <section className="relative bg-bfa-earth text-white py-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/lovable-uploads/e2f11aa1-e862-4d7c-ba75-d389a7cbc3f5.png" alt="Happy family with children" className="w-full h-full object-cover opacity-30" />
-          <div className="absolute inset-0 bg-bfa-earth opacity-10"></div>
+          <img src="https://images.unsplash.com/photo-1460574283810-2aab119d8511?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Modern apartment buildings" className="w-full h-full object-cover opacity-30" />
+          <div className="absolute inset-0 bg-bfa-earth opacity-80"></div>
         </div>
         <div className="container-wide relative z-10">
           <div className="max-w-3xl">
