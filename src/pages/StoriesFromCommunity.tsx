@@ -1,7 +1,13 @@
-
 import React from 'react';
 import TestimonialCard from '@/components/ui/TestimonialCard';
 import CallToAction from '@/components/ui/CallToAction';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const StoriesFromCommunity = () => {
   const individualTestimonials = [
@@ -80,40 +86,59 @@ const StoriesFromCommunity = () => {
         </div>
       </section>
 
-      {/* Individual Testimonials Section */}
+      {/* Individual Testimonials Carousel Section */}
       <section className="py-16 bg-white">
         <div className="container-wide">
-          <div className="space-y-8">
-            {individualTestimonials.map((testimonial, index) => (
-              <div key={index} className="max-w-4xl mx-auto">
-                <TestimonialCard
-                  quote={testimonial.quote}
-                  name={testimonial.name}
-                  title={testimonial.title}
-                  organization={testimonial.organization}
-                  image={testimonial.image}
-                />
-              </div>
-            ))}
+          <div className="max-w-4xl mx-auto">
+            <Carousel opts={{ loop: true }} className="w-full">
+              <CarouselContent>
+                {individualTestimonials.map((testimonial, index) => (
+                  <CarouselItem key={index}>
+                    <div className="p-4">
+                      <TestimonialCard
+                        quote={testimonial.quote}
+                        name={testimonial.name}
+                        title={testimonial.title}
+                        organization={testimonial.organization}
+                        image={testimonial.image}
+                        imageSize="large"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </div>
       </section>
 
-      {/* Partner Organizations Section */}
+      {/* Partner Organizations Carousel Section */}
       <section className="py-16 bg-bfa-gray-light">
         <div className="container-wide">
           <h2 className="text-3xl font-bold mb-12 text-center text-bfa-blue-dark">What Our Partners Are Saying</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
-            {partnerTestimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg shadow-md border border-gray-100">
-                <blockquote className="text-lg italic text-gray-700 mb-4">
-                  "{testimonial.quote}"
-                </blockquote>
-                <cite className="text-bfa-blue font-semibold text-base not-italic">
-                  — {testimonial.organization}
-                </cite>
-              </div>
-            ))}
+          <div className="max-w-4xl mx-auto">
+            <Carousel opts={{ loop: true }} className="w-full">
+              <CarouselContent>
+                {partnerTestimonials.map((testimonial, index) => (
+                  <CarouselItem key={index}>
+                    <div className="p-4">
+                      <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100">
+                        <blockquote className="text-lg italic text-gray-700 mb-4">
+                          "{testimonial.quote}"
+                        </blockquote>
+                        <cite className="text-bfa-blue font-semibold text-base not-italic">
+                          — {testimonial.organization}
+                        </cite>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </div>
       </section>
