@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home as HomeIcon, FileText, Radio, MapPin, Building, Users } from 'lucide-react';
@@ -105,7 +104,7 @@ const Home = () => {
               
               {/* Additional Visual Element */}
               <div className="mt-8 bg-white rounded-lg overflow-hidden shadow-md">
-                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Housing affordability data visualization" className="w-full h-32 object-cover" />
+                
               </div>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
