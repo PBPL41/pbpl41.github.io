@@ -1,14 +1,28 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home as HomeIcon, FileText, Radio, MapPin, Building, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import CallToAction from '@/components/ui/CallToAction';
 import FeatureCard from '@/components/ui/FeatureCard';
+
 const Home = () => {
-  return <main>
+  return (
+    <main>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-bfa-blue to-bfa-blue-dark text-white">
-        <div className="container-wide py-16 md:py-24 min-h-[60vh] flex flex-col justify-center">
+      <section 
+        className="relative text-white"
+        style={{
+          backgroundImage: 'url(/lovable-uploads/cac904b2-9a17-473a-b79b-fc0b053caf38.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        
+        <div className="relative container-wide py-16 md:py-24 min-h-[60vh] flex flex-col justify-center">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fade-in">
               Build for America
@@ -122,6 +136,8 @@ const Home = () => {
 
       {/* Final CTA */}
       <CallToAction title="Join the Movement for Housing Opportunity" subtitle="Add your voice to the growing coalition supporting zoning reform" buttonText="Join the Coalition" buttonLink="/coalition" />
-    </main>;
+    </main>
+  );
 };
+
 export default Home;
