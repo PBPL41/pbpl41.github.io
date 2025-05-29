@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ExternalLink, Mail, Calendar, Pen } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -138,7 +139,7 @@ const JoinCoalition = () => {
       {/* Find Local Organizations */}
       <section className="py-12 bg-bfa-gray-light">
         <div className="container-wide">
-          <h2 className="text-3xl font-bold mb-8 text-center">Find a Local Zoning Reform Organization Near You</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Find a Local Partner Organization Near You</h2>
           <div className="max-w-md mx-auto">
             <Input
               type="text"
