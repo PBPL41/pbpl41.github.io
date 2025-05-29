@@ -1,3 +1,4 @@
+
 import React from 'react';
 import TestimonialCard from '@/components/ui/TestimonialCard';
 import CallToAction from '@/components/ui/CallToAction';
@@ -74,8 +75,9 @@ const StoriesFromCommunity = () => {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-bfa-blue text-white py-16">
-        <div className="container-wide">
+      <section className="relative bg-bfa-blue text-white py-16 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/8c5cc977-8a89-40a1-a22c-27b1c9d1046a.png)'}}>
+        <div className="absolute inset-0 bg-bfa-blue bg-opacity-10"></div>
+        <div className="container-wide relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Stories from the Community</h1>
             <p className="text-xl md:text-2xl mb-4 font-semibold">Real voices. Real impact.</p>
