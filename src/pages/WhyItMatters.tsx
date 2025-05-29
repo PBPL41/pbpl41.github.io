@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -8,81 +7,59 @@ import { Card } from '@/components/ui/card';
 import YouTubeEmbed from '@/components/ui/YouTubeEmbed';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import FeatureCard from '@/components/ui/FeatureCard';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 const WhyItMatters = () => {
-  const testimonials = [
-    {
-      quote: "Zoning should reflect the shared vision of our future growth. It should fit together the pieces of where we are now, where we're trying to go, and how we get there. We plan to transform Boston's zoning code into one that enables Boston to be a family-first, thriving city that is bustling with innovation.",
-      name: "Mayor Wu's Planning Department",
-      title: "City of Boston",
-      organization: "MA"
-    },
-    {
-      quote: "The shortage of affordable housing hurts everyone. Not just the homeless, but everyone from the elderly on fixed incomes to young people who want to live and raise their children in the city where they grew up, and the firemen, teachers and nurses we all depend on who can't afford to live where they work.",
-      name: "Paul Krekorian",
-      title: "Former Council President",
-      organization: "Los Angeles City Council, CA"
-    },
-    {
-      quote: "For too long, restrictive, outdated zoning has held our city and our neighborhoods back. To address the city's decades-long housing crisis and make New York City the best place to raise a family, we must take bold, transformational action to build more homes in transit-rich areas near New Yorkers' jobs and services.",
-      name: "Eric Adams",
-      title: "Mayor",
-      organization: "New York City, NY"
-    },
-    {
-      quote: "I'm very glad to have another opportunity to vote for more housing options in our city. I look forward to continuing conversations about how we can address our housing shortage and ensure that Portland is a place where people from all different backgrounds have the opportunity to live.",
-      name: "Ted Wheeler",
-      title: "Former Mayor",
-      organization: "Portland, OR"
-    },
-    {
-      quote: "San Francisco should be a city with space for more families, more workers, and more dreams. Our administration wants to build enough housing for the next generation of San Franciscans, so that kids who grow up here have the same opportunity to raise their own children here. For too long, San Francisco has made it easier to block new homes than to build them. And while our needs have changed since the 1970s, much of our zoning hasn't.",
-      name: "Daniel Lurie",
-      title: "Mayor",
-      organization: "San Francisco, CA"
-    },
-    {
-      quote: "To bring down costs, support current residents, and prepare for future growth, Seattle needs more housing and more housing choices – it's that simple.",
-      name: "Bruce Harrell",
-      title: "Mayor",
-      organization: "Seattle, WA"
-    },
-    {
-      quote: "Let's call it what it is. It's not zoning. It's about keeping people out, and it's been a tactic used in our municipalities to preserve the status quo and exclude those who can't afford to buy into the existing system.",
-      name: "Joe Alexander",
-      title: "State Representative",
-      organization: "Goffstown, NH"
-    },
-    {
-      quote: "Some communities, especially in southern New Hampshire, have used every trick they can come up with to discourage building. Every single inspection, every permit, every hearing, every redraft, every appeal, every impact fee, every meeting, every single delay, and every single penny a builder needs to put towards a project must be recouped through the sale of the property.",
-      name: "Keith Murphy",
-      title: "State Senator",
-      organization: "Manchester, NH"
-    },
-    {
-      quote: "We need to change the status quo. That means updating our zoning laws to allow for more housing options, so that San Diegans of all income levels can afford to live in our city.",
-      name: "Kevin Faulconer",
-      title: "Former Mayor",
-      organization: "San Diego, CA"
-    }
-  ];
-
+  const testimonials = [{
+    quote: "Zoning should reflect the shared vision of our future growth. It should fit together the pieces of where we are now, where we're trying to go, and how we get there. We plan to transform Boston's zoning code into one that enables Boston to be a family-first, thriving city that is bustling with innovation.",
+    name: "Mayor Wu's Planning Department",
+    title: "City of Boston",
+    organization: "MA"
+  }, {
+    quote: "The shortage of affordable housing hurts everyone. Not just the homeless, but everyone from the elderly on fixed incomes to young people who want to live and raise their children in the city where they grew up, and the firemen, teachers and nurses we all depend on who can't afford to live where they work.",
+    name: "Paul Krekorian",
+    title: "Former Council President",
+    organization: "Los Angeles City Council, CA"
+  }, {
+    quote: "For too long, restrictive, outdated zoning has held our city and our neighborhoods back. To address the city's decades-long housing crisis and make New York City the best place to raise a family, we must take bold, transformational action to build more homes in transit-rich areas near New Yorkers' jobs and services.",
+    name: "Eric Adams",
+    title: "Mayor",
+    organization: "New York City, NY"
+  }, {
+    quote: "I'm very glad to have another opportunity to vote for more housing options in our city. I look forward to continuing conversations about how we can address our housing shortage and ensure that Portland is a place where people from all different backgrounds have the opportunity to live.",
+    name: "Ted Wheeler",
+    title: "Former Mayor",
+    organization: "Portland, OR"
+  }, {
+    quote: "San Francisco should be a city with space for more families, more workers, and more dreams. Our administration wants to build enough housing for the next generation of San Franciscans, so that kids who grow up here have the same opportunity to raise their own children here. For too long, San Francisco has made it easier to block new homes than to build them. And while our needs have changed since the 1970s, much of our zoning hasn't.",
+    name: "Daniel Lurie",
+    title: "Mayor",
+    organization: "San Francisco, CA"
+  }, {
+    quote: "To bring down costs, support current residents, and prepare for future growth, Seattle needs more housing and more housing choices – it's that simple.",
+    name: "Bruce Harrell",
+    title: "Mayor",
+    organization: "Seattle, WA"
+  }, {
+    quote: "Let's call it what it is. It's not zoning. It's about keeping people out, and it's been a tactic used in our municipalities to preserve the status quo and exclude those who can't afford to buy into the existing system.",
+    name: "Joe Alexander",
+    title: "State Representative",
+    organization: "Goffstown, NH"
+  }, {
+    quote: "Some communities, especially in southern New Hampshire, have used every trick they can come up with to discourage building. Every single inspection, every permit, every hearing, every redraft, every appeal, every impact fee, every meeting, every single delay, and every single penny a builder needs to put towards a project must be recouped through the sale of the property.",
+    name: "Keith Murphy",
+    title: "State Senator",
+    organization: "Manchester, NH"
+  }, {
+    quote: "We need to change the status quo. That means updating our zoning laws to allow for more housing options, so that San Diegans of all income levels can afford to live in our city.",
+    name: "Kevin Faulconer",
+    title: "Former Mayor",
+    organization: "San Diego, CA"
+  }];
   return <main>
       {/* Hero Section with Background Image */}
       <section className="relative bg-bfa-earth text-white py-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1460574283810-2aab119d8511?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-            alt="Modern apartment buildings" 
-            className="w-full h-full object-cover opacity-30"
-          />
+          <img src="https://images.unsplash.com/photo-1460574283810-2aab119d8511?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Modern apartment buildings" className="w-full h-full object-cover opacity-30" />
           <div className="absolute inset-0 bg-bfa-earth opacity-80"></div>
         </div>
         <div className="container-wide relative z-10">
@@ -102,11 +79,7 @@ const WhyItMatters = () => {
           <div className="mb-16">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="bg-bfa-gray-light rounded-lg overflow-hidden h-80">
-                <img 
-                  alt="Essential workers in community" 
-                  className="w-full h-full object-cover" 
-                  src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                />
+                <img alt="Essential workers in community" className="w-full h-full object-cover" src="/lovable-uploads/6f2232ee-b924-475f-8b40-c6ebec3cb286.png" />
               </div>
               <div>
                 <h2 className="text-3xl font-bold mb-4 text-bfa-blue-dark">The Housing Crisis Is Undeniable</h2>
@@ -208,20 +181,15 @@ const WhyItMatters = () => {
             </div>
             
             <div className="max-w-4xl mx-auto">
-              <Carousel opts={{ loop: true }} className="w-full">
+              <Carousel opts={{
+              loop: true
+            }} className="w-full">
                 <CarouselContent>
-                  {testimonials.map((testimonial, index) => (
-                    <CarouselItem key={index}>
+                  {testimonials.map((testimonial, index) => <CarouselItem key={index}>
                       <div className="p-4">
-                        <TestimonialCard
-                          quote={testimonial.quote}
-                          name={testimonial.name}
-                          title={testimonial.title}
-                          organization={testimonial.organization}
-                        />
+                        <TestimonialCard quote={testimonial.quote} name={testimonial.name} title={testimonial.title} organization={testimonial.organization} />
                       </div>
-                    </CarouselItem>
-                  ))}
+                    </CarouselItem>)}
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
@@ -247,28 +215,11 @@ const WhyItMatters = () => {
 
             {/* Additional Visual Impact Section */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-              <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Modern mixed-use development" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Mixed-Use Development</h3>
-                  <p className="text-gray-600">Smart zoning allows communities to blend residential, retail, and office spaces for vibrant neighborhoods.</p>
-                </div>
-              </div>
+              
               
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="https://images.unsplash.com/photo-1493397212122-2b85dda8106b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Sustainable urban planning" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Transit-Oriented Growth</h3>
-                  <p className="text-gray-600">Building near transit reduces car dependency and creates more sustainable, connected communities.</p>
-                </div>
+                
+                
               </div>
             </div>
           </div>
