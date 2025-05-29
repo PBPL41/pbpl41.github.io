@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import AboutPolicy from "./pages/AboutPolicy";
 import WhyItMatters from "./pages/WhyItMatters";
 import JoinCoalition from "./pages/JoinCoalition";
+import StoriesFromCommunity from "./pages/StoriesFromCommunity";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import ScrollToTop from "./components/util/ScrollToTop";
