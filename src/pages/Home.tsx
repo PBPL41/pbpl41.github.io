@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home as HomeIcon, FileText, Radio, MapPin, Building, Users } from 'lucide-react';
@@ -12,8 +11,8 @@ const Home = () => {
       <section className="relative bg-gradient-to-br from-bfa-blue to-bfa-blue-dark text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-            alt="Community neighborhood with diverse housing" 
+            src="/lovable-uploads/89127695-96ee-40dc-8e9f-bc5043c02213.png" 
+            alt="Build for America Banner - Community neighborhood with diverse housing" 
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-bfa-blue/80 to-bfa-blue-dark/80"></div>
