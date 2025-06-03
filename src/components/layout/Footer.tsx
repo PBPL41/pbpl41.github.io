@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Linkedin, Mail } from 'lucide-react';
@@ -83,7 +84,7 @@ const Footer = () => {
                 <Mail size={20} />
               </span>
             </div>
-            <Link to="/contact" className="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</Link>
+            <span className="text-gray-300 transition-colors text-sm cursor-default">Contact Us</span>
           </div>
         </div>
 
