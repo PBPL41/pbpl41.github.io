@@ -158,7 +158,7 @@ const WhyItMatters = () => {
                 <div className="md:w-2/3">
                   <h3 className="text-xl font-bold mb-2">Episode 1: America's Housing Crisis Explained</h3>
                   <p className="text-gray-600 mb-4">
-                    In this inaugural episode, we break down the complex factors driving America's housing shortage and explore how zoning reform can help communities address this growing challenge.
+                    In this inaugural episode, Kirun Sankaran helps us break down the complex factors driving America's housing shortage and explore how zoning reform can help communities address this growing challenge.
                   </p>
                   
                   <div className="mb-4">
