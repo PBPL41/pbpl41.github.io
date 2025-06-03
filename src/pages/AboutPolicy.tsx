@@ -4,8 +4,10 @@ import { Download, FileText, Building, Home, Clock, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ResourceCard from '@/components/ui/ResourceCard';
 import CallToAction from '@/components/ui/CallToAction';
+
 const AboutPolicy = () => {
-  return <main>
+  return (
+    <main>
       {/* Hero Section */}
       <section className="relative bg-bfa-blue text-white py-16 bg-cover bg-center" style={{
       backgroundImage: 'url(/lovable-uploads/8828377f-cb94-4a75-b9e7-89e492b83d9e.png)'
@@ -118,7 +120,12 @@ const AboutPolicy = () => {
               <div className="bg-bfa-gray-light p-6 rounded-lg sticky top-24">
                 <h3 className="text-xl font-bold mb-4 text-bfa-blue-dark">Resources</h3>
                 <div className="space-y-4">
-                  <a href="#" className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow">
+                  <a 
+                    href="https://drive.google.com/uc?export=download&id=1pr-R1CqnF4WG566kS7YQmTcZv46OwhPZ" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow"
+                  >
                     <FileText className="text-bfa-blue mr-3" size={24} />
                     <div>
                       <p className="font-bold">Dear Colleague Letter</p>
@@ -161,6 +168,8 @@ const AboutPolicy = () => {
 
       {/* Final CTA */}
       <CallToAction title="Join the Movement for Housing Opportunity" subtitle="Add your voice to the growing coalition supporting zoning reform" buttonText="Join the Coalition" buttonLink="/coalition" />
-    </main>;
+    </main>
+  );
 };
+
 export default AboutPolicy;
