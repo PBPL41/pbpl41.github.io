@@ -1,11 +1,15 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Download, FileText, Building, Home, Clock, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from '@/components/ui/dialog';
 import ResourceCard from '@/components/ui/ResourceCard';
 import CallToAction from '@/components/ui/CallToAction';
 
 const AboutPolicy = () => {
+  const [isFaqDialogOpen, setIsFaqDialogOpen] = useState(false);
+
   return (
     <main>
       {/* Hero Section */}
@@ -143,14 +147,26 @@ const AboutPolicy = () => {
                     <Download className="ml-auto text-gray-500" size={18} />
                   </a>
                   
-                  <a href="#" className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow">
-                    <FileText className="text-bfa-blue mr-3" size={24} />
-                    <div>
-                      <p className="font-bold">FAQ for Local Governments</p>
-                      <p className="text-sm text-gray-600">Common questions answered</p>
-                    </div>
-                    <Download className="ml-auto text-gray-500" size={18} />
-                  </a>
+                  <Dialog open={isFaqDialogOpen} onOpenChange={setIsFaqDialogOpen}>
+                    <DialogTrigger asChild>
+                      <button className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow w-full text-left">
+                        <FileText className="text-bfa-blue mr-3" size={24} />
+                        <div>
+                          <p className="font-bold">FAQ for Local Governments</p>
+                          <p className="text-sm text-gray-600">Common questions answered</p>
+                        </div>
+                        <Download className="ml-auto text-gray-500" size={18} />
+                      </button>
+                    </DialogTrigger>
+                    <DialogContent>
+                      <DialogHeader>
+                        <DialogTitle>FAQ for Local Governments</DialogTitle>
+                        <DialogDescription>
+                          We are working with our partners to develop this resource before our campaign launches.
+                        </DialogDescription>
+                      </DialogHeader>
+                    </DialogContent>
+                  </Dialog>
                   
                   
                 </div>
