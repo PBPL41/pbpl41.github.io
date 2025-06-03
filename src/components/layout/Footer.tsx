@@ -1,10 +1,11 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from '@/components/ui/dialog';
 
 const Footer = () => {
   const year = new Date().getFullYear();
+  const [isFaqDialogOpen, setIsFaqDialogOpen] = useState(false);
   
   return (
     <footer className="bg-bfa-blue-dark text-white">
@@ -40,16 +41,28 @@ const Footer = () => {
             <h4 className="text-lg font-heading font-medium mb-4">Resources</h4>
             <ul className="space-y-2">
               <li>
-                <span className="text-gray-300 transition-colors text-sm cursor-default">Podcast</span>
+                <a href="https://youtu.be/pw6R4h9RTLg" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm">Podcast</a>
               </li>
               <li>
-                <span className="text-gray-300 transition-colors text-sm cursor-default">Dear Colleague Letter</span>
+                <a href="https://drive.google.com/uc?export=download&id=1pr-R1CqnF4WG566kS7YQmTcZv46OwhPZ" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm">Dear Colleague Letter</a>
               </li>
               <li>
-                <span className="text-gray-300 transition-colors text-sm cursor-default">Policy Brief</span>
+                <a href="https://drive.google.com/uc?export=download&id=1j-jI1Gc5pt41RjawIvSssJ53Op7a0kvI" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm">Policy Brief</a>
               </li>
               <li>
-                <span className="text-gray-300 transition-colors text-sm cursor-default">FAQ for Local Governments</span>
+                <Dialog open={isFaqDialogOpen} onOpenChange={setIsFaqDialogOpen}>
+                  <DialogTrigger asChild>
+                    <button className="text-gray-300 hover:text-white transition-colors text-sm text-left">FAQ for Local Governments</button>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogHeader>
+                      <DialogTitle>FAQ for Local Governments</DialogTitle>
+                      <DialogDescription>
+                        We are working with our partners to develop this resource before our campaign launches.
+                      </DialogDescription>
+                    </DialogHeader>
+                  </DialogContent>
+                </Dialog>
               </li>
             </ul>
           </div>
