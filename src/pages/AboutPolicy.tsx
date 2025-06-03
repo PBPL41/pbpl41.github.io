@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Download, FileText, Building, Home, Clock, Car } from 'lucide-react';
@@ -6,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from '@/components/ui/dialog';
 import ResourceCard from '@/components/ui/ResourceCard';
 import CallToAction from '@/components/ui/CallToAction';
+
 const AboutPolicy = () => {
   const [isFaqDialogOpen, setIsFaqDialogOpen] = useState(false);
   return <main>
@@ -130,7 +130,7 @@ const AboutPolicy = () => {
                     <Download className="ml-auto text-gray-500" size={18} />
                   </a>
                   
-                  <a href="https://drive.google.com/file/d/1j-jI1Gc5pt41RjawIvSssJ53Op7a0kvI/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow">
+                  <a href="https://drive.google.com/uc?export=download&id=1j-jI1Gc5pt41RjawIvSssJ53Op7a0kvI" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-white rounded border border-gray-200 hover:shadow-md transition-shadow">
                     <FileText className="text-bfa-blue mr-3" size={24} />
                     <div>
                       <p className="font-bold">Policy Brief</p>
