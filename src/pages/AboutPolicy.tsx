@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Download, FileText, Building, Home, Clock, Car } from 'lucide-react';
@@ -8,7 +7,9 @@ import CallToAction from '@/components/ui/CallToAction';
 const AboutPolicy = () => {
   return <main>
       {/* Hero Section */}
-      <section className="relative bg-bfa-blue text-white py-16 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/8828377f-cb94-4a75-b9e7-89e492b83d9e.png)'}}>
+      <section className="relative bg-bfa-blue text-white py-16 bg-cover bg-center" style={{
+      backgroundImage: 'url(/lovable-uploads/8828377f-cb94-4a75-b9e7-89e492b83d9e.png)'
+    }}>
         <div className="absolute inset-0 bg-bfa-blue bg-opacity-10"></div>
         <div className="container-wide relative z-10">
           <div className="max-w-3xl">
@@ -149,7 +150,7 @@ const AboutPolicy = () => {
 
                 <div className="mt-8">
                   <Button asChild className="w-full bg-bfa-blue hover:bg-bfa-blue-dark text-white">
-                    <Link to="/coalition">Support This Policy</Link>
+                    
                   </Button>
                 </div>
               </div>
