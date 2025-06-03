@@ -1,7 +1,7 @@
+
 import React from 'react';
 import TestimonialCard from '@/components/ui/TestimonialCard';
 import CallToAction from '@/components/ui/CallToAction';
-import USMapSVG from '@/components/ui/USMapSVG';
 import {
   Carousel,
   CarouselContent,
@@ -17,40 +17,35 @@ const StoriesFromCommunity = () => {
       name: "Amy D.",
       title: "Nurse",
       organization: "Boise, ID",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
-      coordinates: [180, 200] as [number, number] // Boise, ID - northwest region
+      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face"
     },
     {
       quote: "When the city relaxed some of the zoning rules downtown, foot traffic increased, and I was able to expand my coffee shop. More people live and work here now, which means better business—and it genuinely feels like a community again.",
       name: "Carlos R.",
       title: "Small Business Owner",
       organization: "Grand Rapids, MI",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      coordinates: [470, 220] as [number, number] // Grand Rapids, MI - midwest/great lakes
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
     },
     {
       quote: "After retirement, I didn't want a big house with upkeep. Gainesville's zoning changes allowed smaller homes near downtown, and now I live closer to shops, parks, and friends. It's exactly the retirement I'd hoped for.",
       name: "Pam W.",
       title: "Retired Teacher",
       organization: "Gainesville, FL",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
-      coordinates: [520, 350] as [number, number] // Gainesville, FL - southeast region
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face"
     },
     {
       quote: "I love Seattle, but it was getting way too expensive. After the city changed zoning to let more apartments and condos get built, I was finally able to buy a place near my job. I never thought homeownership would be possible for me this close to the city.",
       name: "Greg S.",
       title: "Software Developer",
       organization: "Seattle, WA",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      coordinates: [140, 170] as [number, number] // Seattle, WA - northwest coast
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
     },
     {
       quote: "We wanted our kids to grow up close to good schools and safe parks, but single-family homes were completely out of reach. When Missoula began permitting small duplexes and cottage homes, we found a neighborhood we could actually afford. My kids now ride bikes to school every day.",
       name: "Jasmine B.",
       title: "Mom of Three",
       organization: "Missoula, MT",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b172?w=400&h=400&fit=crop&crop=face",
-      coordinates: [220, 190] as [number, number] // Missoula, MT - northwest mountain region
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b172?w=400&h=400&fit=crop&crop=face"
     }
   ];
 
@@ -93,11 +88,30 @@ const StoriesFromCommunity = () => {
         </div>
       </section>
 
-      {/* Individual Testimonials Map Section */}
+      {/* Individual Testimonials Carousel Section */}
       <section className="py-16 bg-white">
         <div className="container-wide">
-          <div className="max-w-6xl mx-auto">
-            <USMapSVG testimonials={individualTestimonials} />
+          <div className="max-w-4xl mx-auto">
+            <Carousel opts={{ loop: true }} className="w-full">
+              <CarouselContent>
+                {individualTestimonials.map((testimonial, index) => (
+                  <CarouselItem key={index}>
+                    <div className="p-4">
+                      <TestimonialCard
+                        quote={testimonial.quote}
+                        name={testimonial.name}
+                        title={testimonial.title}
+                        organization={testimonial.organization}
+                        image={testimonial.image}
+                        imageSize="large"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </div>
       </section>
