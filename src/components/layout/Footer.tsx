@@ -1,9 +1,13 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Linkedin, Mail } from 'lucide-react';
+
 const Footer = () => {
   const year = new Date().getFullYear();
-  return <footer className="bg-bfa-blue-dark text-white">
+  
+  return (
+    <footer className="bg-bfa-blue-dark text-white">
       <div className="container-wide py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -36,16 +40,16 @@ const Footer = () => {
             <h4 className="text-lg font-heading font-medium mb-4">Resources</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/media" className="text-gray-300 hover:text-white transition-colors text-sm">Podcast</Link>
+                <span className="text-gray-300 transition-colors text-sm cursor-default">Podcast</span>
               </li>
               <li>
-                <Link to="/events" className="text-gray-300 hover:text-white transition-colors text-sm">Dear Colleague Letter</Link>
+                <span className="text-gray-300 transition-colors text-sm cursor-default">Dear Colleague Letter</span>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Policy Brief</a>
+                <span className="text-gray-300 transition-colors text-sm cursor-default">Policy Brief</span>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">FAQ for Local Governments</a>
+                <span className="text-gray-300 transition-colors text-sm cursor-default">FAQ for Local Governments</span>
               </li>
             </ul>
           </div>
@@ -53,18 +57,18 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-heading font-medium mb-4">Connect With Us</h4>
             <div className="flex space-x-4 mb-6">
-              <a href="#" className="text-white hover:text-bfa-red transition-colors" aria-label="Facebook">
+              <span className="text-white transition-colors cursor-default" aria-label="Facebook">
                 <Facebook size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-bfa-red transition-colors" aria-label="Twitter">
+              </span>
+              <span className="text-white transition-colors cursor-default" aria-label="Twitter">
                 <Twitter size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-bfa-red transition-colors" aria-label="LinkedIn">
+              </span>
+              <span className="text-white transition-colors cursor-default" aria-label="LinkedIn">
                 <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-bfa-red transition-colors" aria-label="Email">
+              </span>
+              <span className="text-white transition-colors cursor-default" aria-label="Email">
                 <Mail size={20} />
-              </a>
+              </span>
             </div>
             <Link to="/contact" className="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</Link>
           </div>
@@ -74,12 +78,14 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p>&copy; {year} Build for America Coalition. All rights reserved.</p>
             <div className="flex space-x-8">
-              <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-              <Link to="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
+              <span className="transition-colors cursor-default">Privacy Policy</span>
+              <span className="transition-colors cursor-default">Terms of Use</span>
             </div>
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
