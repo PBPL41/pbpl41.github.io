@@ -5,7 +5,6 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Link } from 'react-router-dom';
-
 interface OrganizationProps {
   name: string;
   description: string;
@@ -44,10 +43,11 @@ const JoinCoalition = () => {
     description: "Offers tools and information to empower advocates in creating zoning changes within their communities.",
     website: "https://zoningatlas.org"
   }];
-  return (
-    <main className="bg-bfa-gray-light min-h-screen">
+  return <main className="bg-bfa-gray-light min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-bfa-blue-dark text-white py-16 md:py-24 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/01e9ada5-a74f-4b84-b6b2-86b65409f381.png)'}}>
+      <section className="relative bg-bfa-blue-dark text-white py-16 md:py-24 bg-cover bg-center" style={{
+      backgroundImage: 'url(/lovable-uploads/01e9ada5-a74f-4b84-b6b2-86b65409f381.png)'
+    }}>
         <div className="absolute inset-0 bg-bfa-blue-dark bg-opacity-10"></div>
         <div className="container-wide relative z-10">
           <div className="max-w-3xl">
@@ -82,12 +82,7 @@ const JoinCoalition = () => {
                       <DialogTitle>Subscribe to Our Newsletter</DialogTitle>
                     </DialogHeader>
                     <div className="space-y-4">
-                      <Input
-                        type="email"
-                        placeholder="Enter your email address"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                      />
+                      <Input type="email" placeholder="Enter your email address" value={email} onChange={e => setEmail(e.target.value)} />
                       <Button className="w-full bg-bfa-blue hover:bg-bfa-blue-dark text-white">
                         Subscribe
                       </Button>
@@ -141,13 +136,7 @@ const JoinCoalition = () => {
         <div className="container-wide">
           <h2 className="text-3xl font-bold mb-8 text-center">Find a Local Partner Organization Near You</h2>
           <div className="max-w-md mx-auto">
-            <Input
-              type="text"
-              placeholder="Enter your city, state, or ZIP code"
-              value={searchLocation}
-              onChange={(e) => setSearchLocation(e.target.value)}
-              className="text-center"
-            />
+            <Input type="text" placeholder="Enter your city, state, or ZIP code" value={searchLocation} onChange={e => setSearchLocation(e.target.value)} className="text-center" />
           </div>
         </div>
       </section>
@@ -157,24 +146,17 @@ const JoinCoalition = () => {
         <div className="container-wide">
           <h2 className="text-3xl font-bold mb-8 text-white">Our National Partners</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {nationalOrganizations.map((org) => (
-              <Card key={org.name} className="mb-4 hover:shadow-md transition-shadow bg-white">
+            {nationalOrganizations.map(org => <Card key={org.name} className="mb-4 hover:shadow-md transition-shadow bg-white">
                 <CardHeader className="pb-2">
                   <CardTitle className="text-lg sm:text-xl">{org.name}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-3">{org.description}</p>
-                  <a
-                    href={org.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-bfa-blue hover:text-bfa-blue-dark font-medium"
-                  >
+                  <a href={org.website} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-bfa-blue hover:text-bfa-blue-dark font-medium">
                     Visit Website <ExternalLink size={16} className="ml-1" />
                   </a>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -190,7 +172,6 @@ const JoinCoalition = () => {
           </div>
         </div>
       </section>
-    </main>
-  );
+    </main>;
 };
 export default JoinCoalition;
