@@ -4,10 +4,8 @@ import { Home as HomeIcon, FileText, Radio, MapPin, Building, Users } from 'luci
 import { Button } from '@/components/ui/button';
 import CallToAction from '@/components/ui/CallToAction';
 import FeatureCard from '@/components/ui/FeatureCard';
-
 const Home = () => {
-  return (
-    <main>
+  return <main>
       {/* Hero Section with Background Image */}
       <section className="relative bg-gradient-to-br from-bfa-blue to-bfa-blue-dark text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -69,7 +67,7 @@ const Home = () => {
               <p className="text-sm opacity-80">Understand the details of our proposed legislation</p>
             </Link>
             
-            <Link to="/why-it-matters#podcast" className="bg-bfa-red text-white p-6 rounded-lg shadow-md text-center hover:brightness-95 transition-colors">
+            <Link to="/media" className="bg-bfa-red text-white p-6 rounded-lg shadow-md text-center hover:brightness-95 transition-colors">
               <Radio size={36} className="mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Listen to the Podcast</h3>
               <p className="text-sm opacity-80">Hear experts discuss housing solutions</p>
@@ -133,8 +131,6 @@ const Home = () => {
 
       {/* Final CTA */}
       <CallToAction title="Join the Movement for Housing Opportunity" subtitle="Add your voice to the growing coalition supporting zoning reform" buttonText="Join the Coalition" buttonLink="/coalition" />
-    </main>
-  );
+    </main>;
 };
-
 export default Home;

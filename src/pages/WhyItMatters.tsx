@@ -8,7 +8,6 @@ import YouTubeEmbed from '@/components/ui/YouTubeEmbed';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import FeatureCard from '@/components/ui/FeatureCard';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-
 const WhyItMatters = () => {
   const testimonials = [{
     quote: "Zoning should reflect the shared vision of our future growth. It should fit together the pieces of where we are now, where we're trying to go, and how we get there. We plan to transform Boston's zoning code into one that enables Boston to be a family-first, thriving city that is bustling with innovation.",
@@ -56,8 +55,7 @@ const WhyItMatters = () => {
     title: "Former Mayor",
     organization: "San Diego, CA"
   }];
-  return (
-    <main>
+  return <main>
       {/* Hero Section with Background Image */}
       <section className="relative bg-bfa-earth text-white py-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -137,7 +135,7 @@ const WhyItMatters = () => {
           </div>
 
           {/* Podcast Section */}
-          <div id="podcast" className="mb-16 bg-bfa-gray-light p-8 rounded-lg">
+          <div className="mb-16 bg-bfa-gray-light p-8 rounded-lg">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4">Listen to Our Podcast</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -230,8 +228,6 @@ const WhyItMatters = () => {
 
       {/* Final CTA */}
       <CallToAction title="Join the Movement for Housing Opportunity" subtitle="Add your voice to the growing coalition supporting zoning reform" buttonText="Join the Coalition" buttonLink="/coalition" />
-    </main>
-  );
+    </main>;
 };
-
 export default WhyItMatters;
