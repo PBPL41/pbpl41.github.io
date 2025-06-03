@@ -1,8 +1,7 @@
-
 import React from 'react';
 import TestimonialCard from '@/components/ui/TestimonialCard';
 import CallToAction from '@/components/ui/CallToAction';
-import TestimonialsMap from '@/components/ui/TestimonialsMap';
+import USMapSVG from '@/components/ui/USMapSVG';
 import {
   Carousel,
   CarouselContent,
@@ -19,7 +18,7 @@ const StoriesFromCommunity = () => {
       title: "Nurse",
       organization: "Boise, ID",
       image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
-      coordinates: [-116.2146, 43.6150] as [number, number]
+      coordinates: [180, 200] as [number, number] // Boise, ID - northwest region
     },
     {
       quote: "When the city relaxed some of the zoning rules downtown, foot traffic increased, and I was able to expand my coffee shop. More people live and work here now, which means better business—and it genuinely feels like a community again.",
@@ -27,7 +26,7 @@ const StoriesFromCommunity = () => {
       title: "Small Business Owner",
       organization: "Grand Rapids, MI",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      coordinates: [-85.6681, 42.9634] as [number, number]
+      coordinates: [470, 220] as [number, number] // Grand Rapids, MI - midwest/great lakes
     },
     {
       quote: "After retirement, I didn't want a big house with upkeep. Gainesville's zoning changes allowed smaller homes near downtown, and now I live closer to shops, parks, and friends. It's exactly the retirement I'd hoped for.",
@@ -35,7 +34,7 @@ const StoriesFromCommunity = () => {
       title: "Retired Teacher",
       organization: "Gainesville, FL",
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
-      coordinates: [-82.3248, 29.6516] as [number, number]
+      coordinates: [520, 350] as [number, number] // Gainesville, FL - southeast region
     },
     {
       quote: "I love Seattle, but it was getting way too expensive. After the city changed zoning to let more apartments and condos get built, I was finally able to buy a place near my job. I never thought homeownership would be possible for me this close to the city.",
@@ -43,7 +42,7 @@ const StoriesFromCommunity = () => {
       title: "Software Developer",
       organization: "Seattle, WA",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      coordinates: [-122.3321, 47.6062] as [number, number]
+      coordinates: [140, 170] as [number, number] // Seattle, WA - northwest coast
     },
     {
       quote: "We wanted our kids to grow up close to good schools and safe parks, but single-family homes were completely out of reach. When Missoula began permitting small duplexes and cottage homes, we found a neighborhood we could actually afford. My kids now ride bikes to school every day.",
@@ -51,7 +50,7 @@ const StoriesFromCommunity = () => {
       title: "Mom of Three",
       organization: "Missoula, MT",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b172?w=400&h=400&fit=crop&crop=face",
-      coordinates: [-113.9940, 46.8721] as [number, number]
+      coordinates: [220, 190] as [number, number] // Missoula, MT - northwest mountain region
     }
   ];
 
@@ -98,7 +97,7 @@ const StoriesFromCommunity = () => {
       <section className="py-16 bg-white">
         <div className="container-wide">
           <div className="max-w-6xl mx-auto">
-            <TestimonialsMap testimonials={individualTestimonials} />
+            <USMapSVG testimonials={individualTestimonials} />
           </div>
         </div>
       </section>
