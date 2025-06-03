@@ -35,7 +35,9 @@ const PodcastSection = () => {
             </div>
             
             <div className="flex space-x-2">
-              <Button className="bg-bfa-blue hover:bg-bfa-blue-dark text-white">Play Episode</Button>
+              <Button asChild className="bg-bfa-blue hover:bg-bfa-blue-dark text-white">
+                <a href="https://youtu.be/pw6R4h9RTLg" target="_blank" rel="noopener noreferrer">Play Episode</a>
+              </Button>
               <Button variant="outline" className="border-bfa-blue text-bfa-blue hover:bg-bfa-blue hover:text-white">Subscribe</Button>
             </div>
           </div>
