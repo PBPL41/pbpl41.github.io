@@ -44,7 +44,7 @@ const StoriesFromCommunity = () => {
       name: "Jasmine B.",
       title: "Mom of Three",
       organization: "Missoula, MT",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b172?w=400&h=400&fit=crop&crop=face"
+      image: "/lovable-uploads/378d983a-bdc4-4002-b16d-9010c8e392aa.png"
     }
   ];
 
