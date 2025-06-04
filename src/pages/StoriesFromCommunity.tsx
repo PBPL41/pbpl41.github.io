@@ -1,4 +1,3 @@
-
 import React from 'react';
 import TestimonialCard from '@/components/ui/TestimonialCard';
 import CallToAction from '@/components/ui/CallToAction';
@@ -31,7 +30,7 @@ const StoriesFromCommunity = () => {
       name: "Pam W.",
       title: "Retired Teacher",
       organization: "Gainesville, FL",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face"
+      image: "/lovable-uploads/898f81b5-766e-4445-889b-5efc15814d85.png"
     },
     {
       quote: "I love Seattle, but it was getting way too expensive. After the city changed zoning to let more apartments and condos get built, I was finally able to buy a place near my job. I never thought homeownership would be possible for me this close to the city.",
